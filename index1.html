@@ -1,0 +1,1094 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BTH Aviation - Beyond The Horizon</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        :root {
+            --primary-color: #2563eb;
+            --secondary-color: #1e40af;
+            --accent-color: #3b82f6;
+            --light-bg: #f8fafc;
+            --white-bg: #ffffff;
+            --dark-text: #1e293b;
+            --medium-text: #475569;
+            --light-text: #64748b;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--light-bg);
+            color: var(--dark-text);
+            overflow-x: hidden;
+        }
+
+        /* Navbar Styles */
+        .navbar {
+            background: var(--white-bg);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            padding: 1rem 0;
+            transition: all 0.3s ease;
+        }
+
+        .navbar.scrolled {
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar-brand img {
+            height: 50px;
+            transition: transform 0.3s ease;
+        }
+
+        .navbar-brand img:hover {
+            transform: scale(1.05);
+        }
+
+        .nav-link {
+            color: var(--dark-text) !important;
+            font-weight: 500;
+            margin: 0 0.5rem;
+            position: relative;
+            transition: color 0.3s ease;
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -5px;
+            left: 50%;
+            background: var(--primary-color);
+            transition: all 0.3s ease;
+            transform: translateX(-50%);
+        }
+
+        .nav-link:hover::after,
+        .nav-link.active::after {
+            width: 100%;
+        }
+
+        .nav-link:hover {
+            color: var(--primary-color) !important;
+        }
+
+        /* Hero Section */
+        .hero-section {
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 50%, #bae6fd 100%);
+            overflow: hidden;
+        }
+
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background:
+                radial-gradient(circle at 20% 50%, rgba(37, 99, 235, 0.08) 0%, transparent 50%),
+                radial-gradient(circle at 80% 80%, rgba(59, 130, 246, 0.1) 0%, transparent 50%);
+            animation: pulse 8s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+
+            0%,
+            100% {
+                opacity: 0.5;
+            }
+
+            50% {
+                opacity: 1;
+            }
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero-title {
+            font-size: 3.5rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 1.5rem;
+            animation: fadeInUp 1s ease;
+        }
+
+        .hero-subtitle {
+            font-size: 1.5rem;
+            color: var(--medium-text);
+            margin-bottom: 2rem;
+            animation: fadeInUp 1s ease 0.2s backwards;
+        }
+
+        .hero-description {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: var(--dark-text);
+            margin-bottom: 2.5rem;
+            animation: fadeInUp 1s ease 0.4s backwards;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .btn-custom {
+            background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+            color: white;
+            padding: 1rem 2.5rem;
+            border: none;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(37, 99, 235, 0.3);
+            animation: fadeInUp 1s ease 0.6s backwards;
+        }
+
+        .btn-custom:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 25px rgba(37, 99, 235, 0.4);
+            background: linear-gradient(135deg, var(--accent-color), var(--primary-color));
+        }
+
+        /* Section Styles */
+        .section {
+            padding: 5rem 0;
+            position: relative;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            position: relative;
+            display: inline-block;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background: var(--accent-color);
+        }
+
+        .section-subtitle {
+            color: var(--medium-text);
+            font-size: 1.2rem;
+            margin-bottom: 3rem;
+        }
+
+        /* Service Cards */
+        .service-card {
+            background: var(--white-bg);
+            border: 1px solid #e2e8f0;
+            border-radius: 15px;
+            padding: 2.5rem;
+            height: 100%;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            border-color: var(--primary-color);
+            box-shadow: 0 10px 40px rgba(37, 99, 235, 0.15);
+        }
+
+        .service-icon {
+            width: 70px;
+            height: 70px;
+            background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            color: white;
+            margin-bottom: 1.5rem;
+            transition: all 0.3s ease;
+        }
+
+        .service-card:hover .service-icon {
+            transform: scale(1.1) rotate(5deg);
+        }
+
+        .service-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--dark-text);
+            margin-bottom: 1rem;
+        }
+
+        .service-description {
+            color: var(--medium-text);
+            line-height: 1.7;
+            margin-bottom: 1.5rem;
+        }
+
+        .service-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .service-list li {
+            padding: 0.5rem 0;
+            color: var(--dark-text);
+            display: flex;
+            align-items: center;
+        }
+
+        .service-list li::before {
+            content: '▸';
+            color: var(--primary-color);
+            font-weight: bold;
+            margin-right: 0.5rem;
+        }
+
+        /* Feature Cards */
+        .feature-card {
+            background: var(--white-bg);
+            border: 1px solid #e2e8f0;
+            border-radius: 10px;
+            padding: 2rem;
+            text-align: center;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        .feature-card:hover {
+            background: #f8fafc;
+            border-color: var(--primary-color);
+            transform: translateY(-5px);
+            box-shadow: 0 8px 30px rgba(37, 99, 235, 0.1);
+        }
+
+        .feature-icon {
+            font-size: 3rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        .feature-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: var(--dark-text);
+            margin-bottom: 0.8rem;
+        }
+
+        .feature-text {
+            color: var(--medium-text);
+            line-height: 1.6;
+        }
+
+        /* About Section */
+        .about-section {
+            background: var(--white-bg);
+        }
+
+        /* AI Innovation Section */
+        .ai-section {
+            background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .ai-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background:
+                radial-gradient(circle at 30% 30%, rgba(37, 99, 235, 0.05) 0%, transparent 40%),
+                radial-gradient(circle at 70% 70%, rgba(59, 130, 246, 0.08) 0%, transparent 40%);
+        }
+
+        /* Contact Section */
+        .contact-section {
+            background: var(--white-bg);
+        }
+
+        .contact-card {
+            background: linear-gradient(135deg, #f0f9ff, #e0f2fe);
+            border: 1px solid #bfdbfe;
+            border-radius: 15px;
+            padding: 3rem;
+            text-align: center;
+            box-shadow: 0 4px 20px rgba(37, 99, 235, 0.1);
+        }
+
+        .contact-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.5rem;
+            color: white;
+            margin: 0 auto 1.5rem;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--white-bg);
+            border-top: 1px solid #e2e8f0;
+            padding: 2rem 0;
+        }
+
+        .footer-link {
+            color: var(--medium-text);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-link:hover {
+            color: var(--primary-color);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero-title {
+                font-size: 2.5rem;
+            }
+
+            .hero-subtitle {
+                font-size: 1.2rem;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .service-card {
+                margin-bottom: 2rem;
+            }
+        }
+
+        /* Smooth Scroll */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Carousel Styles */
+        .carousel {
+            position: relative;
+        }
+
+        .carousel-item {
+            transition: transform 1s ease-in-out;
+        }
+
+        .carousel-item img {
+            width: 100%;
+            height: 600px;
+            object-fit: cover;
+            object-position: center;
+            filter: brightness(0.7);
+        }
+
+        .carousel-caption {
+            background: linear-gradient(to top, rgba(5, 16, 28, 0.8) 0%, rgba(5, 16, 28, 0.4) 50%, transparent 100%);
+            left: 0;
+            right: 0;
+            padding: 3rem 1rem;
+        }
+
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+            width: 3rem;
+            height: 3rem;
+            background-color: rgba(74, 159, 200, 0.5);
+            border-radius: 50%;
+        }
+
+        .carousel-control-prev:hover .carousel-control-prev-icon,
+        .carousel-control-next:hover .carousel-control-next-icon {
+            background-color: rgba(74, 159, 200, 0.8);
+        }
+
+        .carousel-indicators button {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: var(--primary-blue);
+        }
+
+        @media (max-width: 768px) {
+            .carousel-item img {
+                height: 350px !important;
+                object-fit: cover !important;
+                object-position: center center !important;
+            }
+
+            .carousel-caption {
+                padding: 2rem 1rem;
+            }
+
+            .carousel-caption h2 {
+                font-size: 1.5rem !important;
+            }
+
+            .carousel-caption p {
+                font-size: 0.9rem !important;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .carousel-item img {
+                height: 300px !important;
+            }
+
+            .carousel-caption h2 {
+                font-size: 1.2rem !important;
+            }
+
+            .carousel-caption p {
+                font-size: 0.85rem !important;
+            }
+        }
+
+
+
+        .footer-link {
+            color: #555;
+            text-decoration: none;
+        }
+
+        .footer-link:hover {
+            color: #0d6efd;
+            text-decoration: underline;
+            padding-left: 3px;
+            transition: 0.3s;
+        }
+
+        .footer-link {
+    color: #555;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.footer-link:hover {
+    color: #0d6efd;
+    transform: translateX(5px);
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+    list-style: none;
+}
+
+.footer-links i {
+    transition: all 0.3s ease;
+}
+
+.footer-links li:hover i {
+    color: #0d6efd;
+    transform: scale(1.2);
+}
+
+    </style>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home">
+                <img src="assets/img/logo.png" alt="" style="width: 100px; height: 100px;">
+                <!-- <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 60'%3E%3Ctext x='10' y='40' font-family='Arial, sans-serif' font-size='32' font-weight='bold' fill='%232563eb'%3EBTH%3C/text%3E%3Ctext x='10' y='55' font-family='Arial, sans-serif' font-size='10' fill='%23475569'%3EBEYOND THE HORIZON%3C/text%3E%3C/svg%3E"
+                    alt="BTH Aviation"> -->
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#innovation">Innovation</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#sustainability">Sustainability</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Carousel Slider -->
+    <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" style="margin-top: 76px;">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+            <!-- <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="3"></button> -->
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./assets/img/slider1.png" class="d-block w-100" alt="Aircraft in Flight"
+                    style="height: 600px; object-fit: cover; filter: brightness(0.7);">
+                <!-- <img src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=1600&auto=format&fit=crop" class="d-block w-100" alt="Aircraft in Flight" style="height: 600px; object-fit: cover; filter: brightness(0.7);"> -->
+                <div class="carousel-caption d-flex flex-column justify-content-center h-100"
+                    style="top: 0; bottom: 0;">
+                    <h2 class="display-4 fw-bold mb-3"
+                        style="color: var(--accent-blue); text-shadow: 2px 2px 4px rgba(0,0,0,0.8);">Excellence in
+                        Aviation</h2>
+                    <p class="lead mb-4" style="color: var(--text-light); text-shadow: 1px 1px 3px rgba(0,0,0,0.8);">
+                        World-Class MRO Solutions for Modern Fleets</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./assets/img/slider2.png" class="d-block w-100" alt="Aircraft Maintenance"
+                    style="height: 600px; object-fit: cover; filter: brightness(0.7);">
+                <!-- <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=1600&auto=format&fit=crop" class="d-block w-100" alt="Aircraft Maintenance" style="height: 600px; object-fit: cover; filter: brightness(0.7);"> -->
+                <div class="carousel-caption d-flex flex-column justify-content-center h-100"
+                    style="top: 0; bottom: 0;">
+                    <h2 class="display-4 fw-bold mb-3"
+                        style="color: var(--accent-blue); text-shadow: 2px 2px 4px rgba(0,0,0,0.8);">Precision
+                        Engineering</h2>
+                    <p class="lead mb-4" style="color: var(--text-light); text-shadow: 1px 1px 3px rgba(0,0,0,0.8);">
+                        Advanced Diagnostics & Predictive Maintenance</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./assets/img/slider3.png" class="d-block w-100" alt="AI Technology"
+                    style="height: 600px; object-fit: cover; filter: brightness(0.7);">
+                <!-- <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=1600&auto=format&fit=crop" class="d-block w-100" alt="AI Technology" style="height: 600px; object-fit: cover; filter: brightness(0.7);"> -->
+                <div class="carousel-caption d-flex flex-column justify-content-center h-100"
+                    style="top: 0; bottom: 0;">
+                    <h2 class="display-4 fw-bold mb-3"
+                        style="color: var(--accent-blue); text-shadow: 2px 2px 4px rgba(0,0,0,0.8);">AI-Powered
+                        Innovation</h2>
+                    <p class="lead mb-4" style="color: var(--text-light); text-shadow: 1px 1px 3px rgba(0,0,0,0.8);">
+                        Smart Maintenance Through Artificial Intelligence</p>
+                </div>
+            </div>
+            <!-- <div class="carousel-item">
+                <img src="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=1600&auto=format&fit=crop" class="d-block w-100" alt="Aviation Future" style="height: 600px; object-fit: cover; filter: brightness(0.7);">
+                <div class="carousel-caption d-flex flex-column justify-content-center h-100" style="top: 0; bottom: 0;">
+                    <h2 class="display-4 fw-bold mb-3" style="color: var(--accent-blue); text-shadow: 2px 2px 4px rgba(0,0,0,0.8);">Sustainable Aviation</h2>
+                    <p class="lead mb-4" style="color: var(--text-light); text-shadow: 1px 1px 3px rgba(0,0,0,0.8);">Environmental Stewardship & Operational Excellence</p>
+                </div>
+            </div> -->
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-7 hero-content">
+                    <h1 class="hero-title">Beyond The Horizon</h1>
+                    <p class="hero-subtitle">Where Engineering Excellence Meets Aviation's Future</p>
+                    <p class="hero-description">
+                        We deliver world-class maintenance, repair, overhaul, and digital aviation solutions that
+                        elevate fleet performance and keep aircraft flying at peak efficiency. Powered by AI-enabled
+                        diagnostics, intelligent fleet monitoring, and a highly skilled engineering workforce, we
+                        transform data into actionable insights that predict failures before they occur.
+                    </p>
+                    <a href="#contact" class="btn btn-custom">Get Started</a>
+                </div>
+                <div class="col-lg-5 text-center">
+                    <img src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=800&auto=format&fit=crop"
+                        alt="Aircraft in Flight" class="img-fluid hero-image"
+                        style="border-radius: 20px; box-shadow: 0 10px 40px rgba(37, 99, 235, 0.2); animation: fadeInUp 1s ease 0.8s backwards;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about-section">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">About BTH Aviation</h2>
+                <p class="section-subtitle">Next-Generation MRO Solutions Provider</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                    <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=800&auto=format&fit=crop"
+                        alt="Aircraft Maintenance" class="img-fluid"
+                        style="border-radius: 15px; box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);">
+                </div>
+                <div class="col-lg-6 mb-4">
+                    <p style="font-size: 1.1rem; line-height: 1.8; color: var(--dark-text);">
+                        We are a next-generation Aviation MRO solutions provider committed to advancing global standards
+                        of aircraft reliability, safety, and lifecycle performance. With strong foundations in precision
+                        engineering and technical expertise, we deliver comprehensive maintenance support for
+                        commercial, charter, defense, and private operators.
+                    </p>
+                    <p style="font-size: 1.1rem; line-height: 1.8; color: var(--dark-text);">
+                        Our team of licensed engineers and skilled technicians brings deep capability across airframe,
+                        engine, avionics, and component maintenance. Using advanced diagnostics, predictive tools, and a
+                        robust quality management system, we ensure every aircraft meets international regulatory and
+                        safety benchmarks.
+                    </p>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="bi bi-shield-check"></i></div>
+                        <h3 class="feature-title">Safety First</h3>
+                        <p class="feature-text">Uncompromised safety standards in every operation</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="bi bi-gear-wide-connected"></i></div>
+                        <h3 class="feature-title">24/7 Support</h3>
+                        <p class="feature-text">Round-the-clock technical assistance and AOG response</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="bi bi-award"></i></div>
+                        <h3 class="feature-title">Certified Excellence</h3>
+                        <p class="feature-text">Licensed engineers and OEM-aligned procedures</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="bi bi-graph-up-arrow"></i></div>
+                        <h3 class="feature-title">Innovation</h3>
+                        <p class="feature-text">AI-driven predictive maintenance technology</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">Our Services</h2>
+                <p class="section-subtitle">Comprehensive MRO Solutions for Modern Aviation</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="service-card">
+                        <div class="service-icon"><i class="bi bi-wrench-adjustable"></i></div>
+                        <h3 class="service-title">Base Maintenance</h3>
+                        <p class="service-description">Comprehensive in-depth support for long-term airworthiness and
+                            reliability.</p>
+                        <ul class="service-list">
+                            <li>Heavy maintenance checks (C/D Checks)</li>
+                            <li>Structural repairs and modifications</li>
+                            <li>Landing gear overhaul</li>
+                            <li>Avionics upgrades</li>
+                            <li>Cabin refurbishment</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="service-card">
+                        <div class="service-icon"><i class="bi bi-clock-history"></i></div>
+                        <h3 class="service-title">Line Maintenance</h3>
+                        <p class="service-description">Fast, efficient day-to-day operations support with 24/7
+                            readiness.</p>
+                        <ul class="service-list">
+                            <li>Daily & transit inspections</li>
+                            <li>Troubleshooting & defect rectification</li>
+                            <li>Component replacement</li>
+                            <li>AOG support</li>
+                            <li>Release-to-service approvals</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="service-card">
+                        <div class="service-icon"><i class="bi bi-lightning-charge"></i></div>
+                        <h3 class="service-title">Engine & APU Overhaul</h3>
+                        <p class="service-description">Peak performance restoration for critical power systems.</p>
+                        <ul class="service-list">
+                            <li>Full teardown & inspection</li>
+                            <li>Performance restoration</li>
+                            <li>Boroscope inspections</li>
+                            <li>Test cell runs</li>
+                            <li>Certification documentation</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="service-card">
+                        <div class="service-icon"><i class="bi bi-chevron-double-down"></i></div>
+                        <h3 class="service-title">Landing Gear Overhaul</h3>
+                        <p class="service-description">Precision-engineered restoration with advanced NDT testing.</p>
+                        <ul class="service-list">
+                            <li>NDT testing (FPI, MPI, Eddy Current)</li>
+                            <li>Shock strut servicing</li>
+                            <li>Brake assembly overhaul</li>
+                            <li>Load simulation tests</li>
+                            <li>OEM compliance</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="service-card">
+                        <div class="service-icon"><i class="bi bi-cpu"></i></div>
+                        <h3 class="service-title">Avionics Overhaul</h3>
+                        <p class="service-description">Precision restoration of aircraft electronic systems.</p>
+                        <ul class="service-list">
+                            <li>LRU functional testing</li>
+                            <li>Circuit-board repair</li>
+                            <li>Communication & navigation modules</li>
+                            <li>Automated test equipment</li>
+                            <li>Calibration services</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="service-card">
+                        <div class="service-icon"><i class="bi bi-tools"></i></div>
+                        <h3 class="service-title">Specialized Services</h3>
+                        <p class="service-description">High-precision solutions for complex maintenance needs.</p>
+                        <ul class="service-list">
+                            <li>NDT Services (FPI, MPI, Ultrasonic)</li>
+                            <li>Composite Repair</li>
+                            <li>Hydraulic System Testing</li>
+                            <li>Wheel & Brake Shop</li>
+                            <li>Painting & Refinishing</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Innovation Section -->
+    <section id="innovation" class="section ai-section">
+        <div class="container position-relative">
+            <div class="text-center mb-5">
+                <h2 class="section-title">AI-Enhanced MRO Innovation</h2>
+                <p class="section-subtitle">Redefining the Future of Aircraft Maintenance</p>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="row align-items-center mb-4">
+                        <div class="col-md-6 mb-4 mb-md-0">
+                            <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&auto=format&fit=crop"
+                                alt="AI Technology" class="img-fluid"
+                                style="border-radius: 15px; box-shadow: 0 8px 30px rgba(37, 99, 235, 0.15);">
+                        </div>
+                        <div class="col-md-6">
+                            <p style="font-size: 1.15rem; line-height: 1.8; color: var(--dark-text);">
+                                We are redefining the future of aircraft maintenance by seamlessly integrating
+                                Artificial Intelligence into every stage of our MRO ecosystem. Our AI-driven platforms
+                                transform raw operational data into actionable intelligence—enabling smarter planning,
+                                faster decision-making, and unparalleled predictive accuracy.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <div class="feature-card text-start">
+                                    <h4 style="color: var(--primary-color); margin-bottom: 1rem;"><i
+                                            class="bi bi-graph-up"></i> Predictive Analytics</h4>
+                                    <p style="color: var(--medium-text);">Identify potential issues before they impact
+                                        operations, reducing AOG events and unscheduled maintenance.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <div class="feature-card text-start">
+                                    <h4 style="color: var(--primary-color); margin-bottom: 1rem;"><i
+                                            class="bi bi-speedometer2"></i> Enhanced Efficiency</h4>
+                                    <p style="color: var(--medium-text);">Optimize task workflows, resource allocation,
+                                        and component life forecasting for maximum efficiency.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <div class="feature-card text-start">
+                                    <h4 style="color: var(--primary-color); margin-bottom: 1rem;"><i
+                                            class="bi bi-eye"></i> Real-Time Monitoring</h4>
+                                    <p style="color: var(--medium-text);">Digital inspections and system monitoring
+                                        provide continuous insights into aircraft health.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <div class="feature-card text-start">
+                                    <h4 style="color: var(--primary-color); margin-bottom: 1rem;"><i
+                                            class="bi bi-piggy-bank"></i> Cost Savings</h4>
+                                    <p style="color: var(--medium-text);">Deliver consistent cost savings and
+                                        operational transparency through intelligent automation.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sustainability Section -->
+    <section id="sustainability" class="section about-section">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">Corporate Sustainability</h2>
+                <p class="section-subtitle">Responsible Operations for a Sustainable Future</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 mx-auto mb-4">
+                    <p style="font-size: 1.1rem; line-height: 1.8; color: var(--dark-text); margin-bottom: 2rem;">
+                        We are committed to responsible, forward-thinking operations that support environmental
+                        stewardship, operational efficiency, and long-term industry sustainability. Our approach
+                        integrates modern technology, optimized processes, and ethical business practices to reduce our
+                        environmental footprint while enhancing value for customers and communities.
+                    </p>
+                </div>
+                <div class="col-lg-8 mx-auto mb-4">
+                    <img src="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=800&auto=format&fit=crop"
+                        alt="Sustainable Aviation" class="img-fluid"
+                        style="border-radius: 15px; box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);">
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-md-4 mb-4">
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="bi bi-leaf"></i></div>
+                        <h3 class="feature-title">Energy Efficiency</h3>
+                        <p class="feature-text">Optimized tooling and low-emission equipment for responsible resource
+                            use</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="bi bi-recycle"></i></div>
+                        <h3 class="feature-title">Waste Reduction</h3>
+                        <p class="feature-text">Recycling initiatives and safe disposal of hazardous materials</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="bi bi-file-earmark-text"></i></div>
+                        <h3 class="feature-title">Digital Systems</h3>
+                        <p class="feature-text">Paperless operations improving transparency and efficiency</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">Reach Us</h2>
+                <p class="section-subtitle">Your Next-Level Aviation Support is Just a Message Away</p>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="bi bi-envelope"></i>
+                        </div>
+                        <h3 style="color: var(--primary-color); margin-bottom: 1rem;">Get in Touch</h3>
+                        <p style="color: var(--medium-text); margin-bottom: 2rem;">
+                            Connect with our experts to explore tailored MRO solutions designed for your fleet's
+                            success.
+                        </p>
+                        <a href="mailto:info@bthaviation.com" class="btn btn-custom">
+                            <i class="bi bi-envelope me-2"></i>info@bthaviation.com
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="pt-5 pb-4" style="background:#f9f9f9;">
+        <div class="container">
+            <div class="row">
+    
+                <!-- Column 1: Logo -->
+                <div class="col-md-3 col-sm-6 mb-4 text-center text-md-start">
+                    <img src="assets/logo.png" alt="BTH Aviation Logo" style="width:150px;">
+                    <p class="mt-3" style="color:#555;">
+                        Beyond The Horizon – Trusted Aviation Services.
+                    </p>
+                </div>
+    
+                <!-- Column 2: Quick Links -->
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <h5 class="fw-bold mb-3">Quick Links</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li><i class="fas fa-check-circle me-2 text-primary"></i><a href="#home" class="footer-link">Home</a></li>
+                        <li><i class="fas fa-check-circle me-2 text-primary"></i><a href="#about" class="footer-link">About Us</a></li>
+                        <li><i class="fas fa-check-circle me-2 text-primary"></i><a href="#services" class="footer-link">Services</a></li>
+                    </ul>
+                </div>
+    
+                <!-- Column 3: Services List -->
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <h5 class="fw-bold mb-3">Our Services</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li><i class="fas fa-check-circle me-2 text-primary"></i><a href="#" class="footer-link">Aviation Consulting</a></li>
+                        <li><i class="fas fa-check-circle me-2 text-primary"></i><a href="#" class="footer-link">Flight Scheduling</a></li>
+                        <li><i class="fas fa-check-circle me-2 text-primary"></i><a href="#" class="footer-link">Ground Handling</a></li>
+                        <li><i class="fas fa-check-circle me-2 text-primary"></i><a href="#" class="footer-link">Air Charter Services</a></li>
+                        <li><i class="fas fa-check-circle me-2 text-primary"></i><a href="#" class="footer-link">Cargo Management</a></li>
+                    </ul>
+                </div>
+    
+                <!-- Column 4: Address -->
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <h5 class="fw-bold mb-3">Contact Us</h5>
+                    <ul class="list-unstyled" style="color:#555;">
+                        <li><i class="fas fa-map-marker-alt me-2 text-primary"></i>2nd Floor, Skyview Tower, Hyderabad, Telangana 500081</li>
+                        <li><i class="fas fa-phone me-2 text-primary"></i>+91 9876543210</li>
+                        <li><i class="fas fa-envelope me-2 text-primary"></i>info@bthaviation.com</li>
+                    </ul>
+                </div>
+    
+            </div>
+    
+            <hr>
+    
+            <!-- Bottom Row -->
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p style="color:#777; margin:0;">
+                        © 2025 BTH Aviation – Beyond The Horizon. All rights reserved.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Auto-play carousel
+        var carousel = new bootstrap.Carousel(document.getElementById('heroCarousel'), {
+            interval: 4000,
+            wrap: true,
+            pause: 'hover'
+        });
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', function () {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Active nav link on scroll
+        const sections = document.querySelectorAll('section[id]');
+        const navLinks = document.querySelectorAll('.nav-link');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (pageYOffset >= sectionTop - 200) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active');
+                }
+            });
+        });
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    const navbarHeight = document.querySelector('.navbar').offsetHeight;
+                    const targetPosition = target.offsetTop - navbarHeight;
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: 'smooth'
+                    });
+                    // Close mobile menu if open
+                    const navbarCollapse = document.querySelector('.navbar-collapse');
+                    if (navbarCollapse.classList.contains('show')) {
+                        navbarCollapse.classList.remove('show');
+                    }
+                }
+            });
+        });
+
+        // Animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.service-card, .feature-card').forEach(card => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(30px)';
+            card.style.transition = 'all 0.6s ease';
+            observer.observe(card);
+        });
+    </script>
+</body>
+
+</html>
