@@ -1,16 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BTH Aviation - Beyond The Horizon</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-
-
     <style>
         :root {
             --primary-blue: #4a9fc8;
@@ -104,22 +99,15 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background:
+            background: 
                 radial-gradient(circle at 20% 50%, rgba(74, 159, 200, 0.1) 0%, transparent 50%),
                 radial-gradient(circle at 80% 80%, rgba(94, 179, 214, 0.15) 0%, transparent 50%);
             animation: pulse 8s ease-in-out infinite;
         }
 
         @keyframes pulse {
-
-            0%,
-            100% {
-                opacity: 0.5;
-            }
-
-            50% {
-                opacity: 1;
-            }
+            0%, 100% { opacity: 0.5; }
+            50% { opacity: 1; }
         }
 
         .hero-content {
@@ -158,7 +146,6 @@
                 opacity: 0;
                 transform: translateY(30px);
             }
-
             to {
                 opacity: 1;
                 transform: translateY(0);
@@ -335,7 +322,7 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background:
+            background: 
                 radial-gradient(circle at 30% 30%, rgba(74, 159, 200, 0.1) 0%, transparent 40%),
                 radial-gradient(circle at 70% 70%, rgba(94, 179, 214, 0.1) 0%, transparent 40%);
         }
@@ -406,117 +393,23 @@
         html {
             scroll-behavior: smooth;
         }
-
-
-
-
-
-        .hero-description {
-            overflow: hidden;
-            max-height: 100px;
-            /* initial visible height */
-            transition: max-height 0.5s ease;
-        }
-
-        .hero-description.expanded {
-            max-height: 1000px;
-            /* enough to show full content */
-        }
-
-        .hero-section {
-            position: relative;
-            overflow: hidden;
-        }
-
-        .hero-section img {
-            transition: transform 0.5s ease;
-        }
-
-        .hero-section:hover img {
-            transform: scale(1.05);
-        }
-
-        .hero-text h1 {
-            font-size: 3rem;
-        }
-
-        .hero-text p {
-            font-size: 1.2rem;
-        }
-
-        /* about section */
-        .capabilities-section {
-            /* background: linear-gradient(135deg, #e0f7ff, #ffffff); */
-            background-color: #112a45 !important;
-            padding: 60px 20px;
-            border-radius: 20px;
-        }
-
-        .section-title {
-            font-size: 2.5rem;
-            font-weight: 700;
-            color: #0d6efd;
-        }
-
-        .section-subtitle {
-            font-size: 1.1rem;
-            color: #555;
-        }
-
-        .capability-card {
-            background: #fff;
-            border-radius: 15px;
-            padding: 30px 20px;
-            text-align: center;
-            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s, box-shadow 0.3s;
-            cursor: pointer;
-        }
-
-        .capability-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
-        }
-
-        .capability-icon {
-            font-size: 2.5rem;
-            color: #0d6efd;
-            margin-bottom: 15px;
-            transition: transform 0.3s;
-        }
-
-        .capability-card:hover .capability-icon {
-            transform: scale(1.3) rotate(10deg);
-        }
-
-        .capability-card h5 {
-            font-size: 1.2rem;
-            font-weight: 600;
-            margin-bottom: 10px;
-        }
-
-        .capability-card p {
-            font-size: 0.95rem;
-            color: #555;
-        }
     </style>
 </head>
-
 <body>
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container">
             <a class="navbar-brand" href="#home">
-                <!-- <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 60'%3E%3Ctext x='10' y='40' font-family='Arial, sans-serif' font-size='32' font-weight='bold' fill='%232563eb'%3EBTH%3C/text%3E%3Ctext x='10' y='55' font-family='Arial, sans-serif' font-size='10' fill='%23475569'%3EBEYOND THE HORIZON%3C/text%3E%3C/svg%3E"
-                    alt="BTH Aviation"> -->
-                <img src="assets/img/logo.png" alt="" style="width: 100px; height: 100px;">
+            
+               <img src="assets/img/logo.png" alt="" style="width: 100px; height: 100px;">
+                <!-- <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 60'%3E%3Ctext x='10' y='40' font-family='Arial, sans-serif' font-size='32' font-weight='bold' fill='%234a9fc8'%3EBTH%3C/text%3E%3Ctext x='10' y='55' font-family='Arial, sans-serif' font-size='10' fill='%238b9dad'%3EBEYOND THE HORIZON%3C/text%3E%3C/svg%3E" alt="BTH Aviation"> -->
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link active" href="index2.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
                     <li class="nav-item"><a class="nav-link" href="#innovation">Innovation</a></li>
@@ -527,66 +420,42 @@
         </div>
     </nav>
 
-    <section id="about-hero" style="position: relative; height: 500px; margin-top: 140px;">
-        <!-- Background Image -->
-        <img src="./assets/img/slider1.png" alt="About Us" class="img-fluid w-100 h-100" style="object-fit: cover;">
-
-        <!-- Black Overlay -->
-        <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;
-                    background-color: rgba(0,0,0,0.5);">
-        </div>
-
-        <!-- Text Content -->
-        <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
-                    color: #fff; text-align: center; z-index: 2;">
-            <h1 style="font-size: 3rem; text-shadow: 2px 2px 6px rgba(0,0,0,0.7);">About Us</h1>
-            <!-- <a href="index.html" style="text-decoration: none; color: #fff;">
-                <p style="font-size: 1.2rem; max-width: 700px; margin: auto; text-shadow: 1px 1px 4px rgba(0,0,0,0.6); cursor: pointer;">
-                    We provide world-class aviation solutions with a focus on MRO excellence and AI-powered innovation.
-                </p>
-            </a> -->
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8 hero-content">
+                    <h1 class="hero-title">Beyond The Horizon</h1>
+                    <p class="hero-subtitle">Where Engineering Excellence Meets Aviation's Future</p>
+                    <p class="hero-description">
+                        We deliver world-class maintenance, repair, overhaul, and digital aviation solutions that elevate fleet performance and keep aircraft flying at peak efficiency. Powered by AI-enabled diagnostics, intelligent fleet monitoring, and a highly skilled engineering workforce, we transform data into actionable insights that predict failures before they occur.
+                    </p>
+                    <a href="#contact" class="btn btn-custom">Get Started</a>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- Hero Section -->
+    <!-- About Section -->
     <section id="about" class="section about-section">
         <div class="container">
             <div class="text-center mb-5">
                 <h2 class="section-title">About BTH Aviation</h2>
-                <p class="section-subtitle">BTH: Where Engineering Excellence Meets Aviation's Future. Excellence in
-                    Motion.</p>
+                <p class="section-subtitle">Next-Generation MRO Solutions Provider</p>
             </div>
             <div class="row">
                 <div class="col-lg-6 mb-4">
-                    <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=800&auto=format&fit=crop"
-                        alt="Aircraft Maintenance" class="img-fluid"
-                        style="border-radius: 15px; box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1); height: 300px; ">
+                    <p style="font-size: 1.1rem; line-height: 1.8; color: var(--text-light);">
+                        We are a next-generation Aviation MRO solutions provider committed to advancing global standards of aircraft reliability, safety, and lifecycle performance. With strong foundations in precision engineering and technical expertise, we deliver comprehensive maintenance support for commercial, charter, defense, and private operators.
+                    </p>
                 </div>
                 <div class="col-lg-6 mb-4">
-                    <p style="font-size: 1.1rem; line-height: 1.8; color: var(--dark-text);">
-                        BTH - Beyond The Horizon stands at the forefront of next-generation Aviation MRO , serving as a
-                        future-ready partner that delivers complete, end-to-end maintenance, repair, and overhaul
-                        solutions. We are a one-stop-shop for all engineering requirements for commercial, charter,
-                        government, and private operators.
+                    <p style="font-size: 1.1rem; line-height: 1.8; color: var(--text-light);">
+                        Our team of licensed engineers and skilled technicians brings deep capability across airframe, engine, avionics, and component maintenance. Using advanced diagnostics, predictive tools, and a robust quality management system, we ensure every aircraft meets international regulatory and safety benchmarks.
                     </p>
-
-                    <h1>Who We Are</h1>
-                    <p style="font-size: 1.1rem; line-height: 1.8; color: var(--dark-text);">
-                        With strong foundations in precision engineering and a highly skilled engineering workforce ,
-                        BTH is committed to advancing global standards of aircraft reliability, safety, and lifecycle
-                        performance. We manage and maintain modern fleets by leveraging certified expertise, advanced
-                        diagnostics, and AI-enabled predictive maintenance. Our focus on digital innovation and
-                        intelligent fleet monitoring ensures every aircraft takes off safer, stays operational longer,
-                        and performs at its peak , maximizing uptime and operational reliability
-                    </p>
-
                 </div>
             </div>
-
-
-
-
-            <!-- <div class="row mt-5">
+            <div class="row mt-5">
                 <div class="col-md-3 col-sm-6 mb-4">
                     <div class="feature-card">
                         <div class="feature-icon"><i class="bi bi-shield-check"></i></div>
@@ -615,193 +484,240 @@
                         <p class="feature-text">AI-driven predictive maintenance technology</p>
                     </div>
                 </div>
-            </div> -->
+            </div>
         </div>
     </section>
 
-    <section class="capabilities-section py-5">
+    <!-- Services Section -->
+    <section id="services" class="section">
         <div class="container">
-            <div class="row justify-content-center mb-5">
-                <div class="col-lg-8 text-center">
-                    <h2 class="section-title mb-3">Our Capabilities</h2>
-                    <p class="section-subtitle">
-                        Our comprehensive, end-to-end capabilities are delivered from fully equipped facilities
-                        and are designed to minimize downtime and extend asset life.
-                    </p>
+            <div class="text-center mb-5">
+                <h2 class="section-title">Our Services</h2>
+                <p class="section-subtitle">Comprehensive MRO Solutions for Modern Aviation</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="service-card">
+                        <div class="service-icon"><i class="bi bi-wrench-adjustable"></i></div>
+                        <h3 class="service-title">Base Maintenance</h3>
+                        <p class="service-description">Comprehensive in-depth support for long-term airworthiness and reliability.</p>
+                        <ul class="service-list">
+                            <li>Heavy maintenance checks (C/D Checks)</li>
+                            <li>Structural repairs and modifications</li>
+                            <li>Landing gear overhaul</li>
+                            <li>Avionics upgrades</li>
+                            <li>Cabin refurbishment</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="service-card">
+                        <div class="service-icon"><i class="bi bi-clock-history"></i></div>
+                        <h3 class="service-title">Line Maintenance</h3>
+                        <p class="service-description">Fast, efficient day-to-day operations support with 24/7 readiness.</p>
+                        <ul class="service-list">
+                            <li>Daily & transit inspections</li>
+                            <li>Troubleshooting & defect rectification</li>
+                            <li>Component replacement</li>
+                            <li>AOG support</li>
+                            <li>Release-to-service approvals</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="service-card">
+                        <div class="service-icon"><i class="bi bi-lightning-charge"></i></div>
+                        <h3 class="service-title">Engine & APU Overhaul</h3>
+                        <p class="service-description">Peak performance restoration for critical power systems.</p>
+                        <ul class="service-list">
+                            <li>Full teardown & inspection</li>
+                            <li>Performance restoration</li>
+                            <li>Boroscope inspections</li>
+                            <li>Test cell runs</li>
+                            <li>Certification documentation</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="service-card">
+                        <div class="service-icon"><i class="bi bi-chevron-double-down"></i></div>
+                        <h3 class="service-title">Landing Gear Overhaul</h3>
+                        <p class="service-description">Precision-engineered restoration with advanced NDT testing.</p>
+                        <ul class="service-list">
+                            <li>NDT testing (FPI, MPI, Eddy Current)</li>
+                            <li>Shock strut servicing</li>
+                            <li>Brake assembly overhaul</li>
+                            <li>Load simulation tests</li>
+                            <li>OEM compliance</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="service-card">
+                        <div class="service-icon"><i class="bi bi-cpu"></i></div>
+                        <h3 class="service-title">Avionics Overhaul</h3>
+                        <p class="service-description">Precision restoration of aircraft electronic systems.</p>
+                        <ul class="service-list">
+                            <li>LRU functional testing</li>
+                            <li>Circuit-board repair</li>
+                            <li>Communication & navigation modules</li>
+                            <li>Automated test equipment</li>
+                            <li>Calibration services</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="service-card">
+                        <div class="service-icon"><i class="bi bi-tools"></i></div>
+                        <h3 class="service-title">Specialized Services</h3>
+                        <p class="service-description">High-precision solutions for complex maintenance needs.</p>
+                        <ul class="service-list">
+                            <li>NDT Services (FPI, MPI, Ultrasonic)</li>
+                            <li>Composite Repair</li>
+                            <li>Hydraulic System Testing</li>
+                            <li>Wheel & Brake Shop</li>
+                            <li>Painting & Refinishing</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-
-            <div class="row g-4">
-
-                <!-- Card 1 -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="capability-card">
-                        <i class="fas fa-tools capability-icon"></i>
-                        <h5>Base Maintenance</h5>
-                        <p>Including heavy C/D checks and structural repairs.</p>
-                    </div>
-                </div>
-
-                <!-- Card 2 -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="capability-card">
-                        <i class="fas fa-plane-arrival capability-icon"></i>
-                        <h5>Line Maintenance</h5>
-                        <p>Including routine checks and AOG support.</p>
-                    </div>
-                </div>
-
-                <!-- Card 3 -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="capability-card">
-                        <i class="fas fa-cogs capability-icon"></i>
-                        <h5>Engine & APU Overhaul</h5>
-                        <p>High-precision engine and APU maintenance.</p>
-                    </div>
-                </div>
-
-                <!-- Card 4 -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="capability-card">
-                        <i class="fas fa-microchip capability-icon"></i>
-                        <h5>Avionics Accessories Overhaul</h5>
-                        <p>Repair & maintenance of avionics systems.</p>
-                    </div>
-                </div>
-
-                <!-- Card 5 -->
-                <!-- <div class="col-md-6 col-lg-4">
-                    <div class="capability-card">
-                        <i class="fas fa-cog capability-icon"></i>
-                        <h5>Component MBH Programs</h5>
-                        <p>Optimizing component performance & lifecycle.</p>
-                    </div>
-                </div> -->
-
-                <!-- Card 6 -->
-                <!-- <div class="col-md-6 col-lg-4">
-                    <div class="capability-card">
-                        <i class="fas fa-chair capability-icon"></i>
-                        <h5>Cabin & Interior Refurbishment</h5>
-                        <p>Enhancing cabin aesthetics and comfort.</p>
-                    </div>
-                </div> -->
-
-                <!-- Card 7 -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="capability-card">
-                        <i class="fas fa-gear capability-icon"></i>
-                        <h5>Landing Gear Overhaul</h5>
-                        <p>Full maintenance & testing of landing gear systems.</p>
-                    </div>
-                </div>
-
-                <!-- Card 8 -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="capability-card">
-                        <i class="fas fa-vial capability-icon"></i>
-                        <h5>Specialized Services</h5>
-                        <p>Including NDT, composite repair, and hydraulic testing.</p>
-                    </div>
-                </div>
-
-            </div>
-
-            <!-- Footer Text -->
-            <!-- <div class="row mt-5">
-                <div class="col text-center">
-                    <p class="text-muted">
-                        Our dedicated support teams provide rapid, 24/7 support to ensure aircraft depart on time 
-                        and in peak operating condition.
-                    </p>
-                </div>
-            </div> -->
         </div>
     </section>
 
+    <!-- AI Innovation Section -->
+    <section id="innovation" class="section ai-section">
+        <div class="container position-relative">
+            <div class="text-center mb-5">
+                <h2 class="section-title">AI-Enhanced MRO Innovation</h2>
+                <p class="section-subtitle">Redefining the Future of Aircraft Maintenance</p>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="service-card">
+                        <p style="font-size: 1.15rem; line-height: 1.8; color: var(--text-light); margin-bottom: 2rem;">
+                            We are redefining the future of aircraft maintenance by seamlessly integrating Artificial Intelligence into every stage of our MRO ecosystem. Our AI-driven platforms transform raw operational data into actionable intelligence—enabling smarter planning, faster decision-making, and unparalleled predictive accuracy.
+                        </p>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <div class="feature-card text-start">
+                                    <h4 style="color: var(--accent-blue); margin-bottom: 1rem;"><i class="bi bi-graph-up"></i> Predictive Analytics</h4>
+                                    <p style="color: var(--text-muted);">Identify potential issues before they impact operations, reducing AOG events and unscheduled maintenance.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <div class="feature-card text-start">
+                                    <h4 style="color: var(--accent-blue); margin-bottom: 1rem;"><i class="bi bi-speedometer2"></i> Enhanced Efficiency</h4>
+                                    <p style="color: var(--text-muted);">Optimize task workflows, resource allocation, and component life forecasting for maximum efficiency.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <div class="feature-card text-start">
+                                    <h4 style="color: var(--accent-blue); margin-bottom: 1rem;"><i class="bi bi-eye"></i> Real-Time Monitoring</h4>
+                                    <p style="color: var(--text-muted);">Digital inspections and system monitoring provide continuous insights into aircraft health.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <div class="feature-card text-start">
+                                    <h4 style="color: var(--accent-blue); margin-bottom: 1rem;"><i class="bi bi-piggy-bank"></i> Cost Savings</h4>
+                                    <p style="color: var(--text-muted);">Deliver consistent cost savings and operational transparency through intelligent automation.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- Sustainability Section -->
+    <section id="sustainability" class="section about-section">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">Corporate Sustainability</h2>
+                <p class="section-subtitle">Responsible Operations for a Sustainable Future</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <p style="font-size: 1.1rem; line-height: 1.8; color: var(--text-light); margin-bottom: 2rem;">
+                        We are committed to responsible, forward-thinking operations that support environmental stewardship, operational efficiency, and long-term industry sustainability. Our approach integrates modern technology, optimized processes, and ethical business practices to reduce our environmental footprint while enhancing value for customers and communities.
+                    </p>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-md-4 mb-4">
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="bi bi-leaf"></i></div>
+                        <h3 class="feature-title">Energy Efficiency</h3>
+                        <p class="feature-text">Optimized tooling and low-emission equipment for responsible resource use</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="bi bi-recycle"></i></div>
+                        <h3 class="feature-title">Waste Reduction</h3>
+                        <p class="feature-text">Recycling initiatives and safe disposal of hazardous materials</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="bi bi-file-earmark-text"></i></div>
+                        <h3 class="feature-title">Digital Systems</h3>
+                        <p class="feature-text">Paperless operations improving transparency and efficiency</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-
-
-
-
-
-
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">Reach Us</h2>
+                <p class="section-subtitle">Your Next-Level Aviation Support is Just a Message Away</p>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="bi bi-envelope"></i>
+                        </div>
+                        <h3 style="color: var(--accent-blue); margin-bottom: 1rem;">Get in Touch</h3>
+                        <p style="color: var(--text-muted); margin-bottom: 2rem;">
+                            Connect with our experts to explore tailored MRO solutions designed for your fleet's success.
+                        </p>
+                        <a href="mailto:info@bthaviation.com" class="btn btn-custom">
+                            <i class="bi bi-envelope me-2"></i>info@bthaviation.com
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Footer -->
-    <footer class="pt-5 pb-4" style="background:#f9f9f9;">
+    <footer>
         <div class="container">
-            <div class="row">
-
-                <!-- Column 1: Logo -->
-                <div class="col-md-3 col-sm-6 mb-4 text-center text-md-start">
-                    <img src="assets/img/logo.png" alt="BTH Aviation Logo" style="width:200px;">
-                    <!-- <p class="mt-3" style="color:#555;">
-                        Beyond The Horizon – Trusted Aviation Services.
-                    </p> -->
-                </div>
-
-                <!-- Column 2: Quick Links -->
-                <div class="col-md-3 col-sm-6 mb-4">
-                    <h5 class="fw-bold mb-3">Quick Links</h5>
-                    <ul class="list-unstyled footer-links">
-                        <li><i class="fas fa-check-circle me-2 text-primary"></i><a href="#home"
-                                class="footer-link">Home</a></li>
-                        <li><i class="fas fa-check-circle me-2 text-primary"></i><a href="#about"
-                                class="footer-link">About Us</a></li>
-                        <li><i class="fas fa-check-circle me-2 text-primary"></i><a href="#services"
-                                class="footer-link">Services</a></li>
-                    </ul>
-                </div>
-
-                <!-- Column 3: Services List -->
-                <div class="col-md-3 col-sm-6 mb-4">
-                    <h5 class="fw-bold mb-3">Our Services</h5>
-                    <ul class="list-unstyled footer-links">
-                        <li><i class="fas fa-check-circle me-2 text-primary"></i><a href="#"
-                                class="footer-link">Aviation Consulting</a></li>
-                        <li><i class="fas fa-check-circle me-2 text-primary"></i><a href="#" class="footer-link">Flight
-                                Scheduling</a></li>
-                        <li><i class="fas fa-check-circle me-2 text-primary"></i><a href="#" class="footer-link">Ground
-                                Handling</a></li>
-                        <li><i class="fas fa-check-circle me-2 text-primary"></i><a href="#" class="footer-link">Air
-                                Charter Services</a></li>
-                        <li><i class="fas fa-check-circle me-2 text-primary"></i><a href="#" class="footer-link">Cargo
-                                Management</a></li>
-                    </ul>
-                </div>
-
-                <!-- Column 4: Address -->
-                <div class="col-md-3 col-sm-6 mb-4">
-                    <h5 class="fw-bold mb-3">Contact Us</h5>
-                    <ul class="list-unstyled" style="color:#555;">
-                        <li><i class="fas fa-map-marker-alt me-2 text-primary"></i>2nd Floor, Skyview Tower, Hyderabad,
-                            Telangana 500081</li>
-                        <li><i class="fas fa-phone me-2 text-primary"></i>+91 9876543210</li>
-                        <li><i class="fas fa-envelope me-2 text-primary"></i>info@bthaviation.com</li>
-                    </ul>
-                </div>
-
-            </div>
-
-            <hr>
-
-            <!-- Bottom Row -->
-            <div class="row">
-                <div class="col-md-12 text-center">
-                    <p style="color:#777; margin:0;">
-                        © 2025 BTH Aviation – Beyond The Horizon. All rights reserved.
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    <p style="color: var(--text-muted); margin: 0;">
+                        &copy; 2025 BTH Aviation - Beyond The Horizon. All rights reserved.
                     </p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <a href="#home" class="footer-link me-3">Home</a>
+                    <a href="#about" class="footer-link me-3">About</a>
+                    <a href="#services" class="footer-link me-3">Services</a>
+                    <a href="#contact" class="footer-link">Contact</a>
                 </div>
             </div>
         </div>
     </footer>
 
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script>
         // Navbar scroll effect
-        window.addEventListener('scroll', function () {
+        window.addEventListener('scroll', function() {
             const navbar = document.querySelector('.navbar');
             if (window.scrollY > 50) {
                 navbar.classList.add('scrolled');
@@ -875,23 +791,5 @@
             observer.observe(card);
         });
     </script>
-
-
-    <script>
-        const readMoreBtn = document.getElementById("readMoreBtn");
-        const heroText = document.getElementById("heroText");
-
-        readMoreBtn.addEventListener("click", function () {
-            heroText.classList.toggle("expanded");
-
-            if (heroText.classList.contains("expanded")) {
-                readMoreBtn.textContent = "Read Less";
-            } else {
-                readMoreBtn.textContent = "Read More";
-            }
-        });
-    </script>
-
 </body>
-
 </html>
