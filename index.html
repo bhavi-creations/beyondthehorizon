@@ -8,6 +8,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
 
 
 
@@ -432,6 +435,9 @@
 
 
 
+
+
+
         .hero-description {
             overflow: hidden;
             max-height: 100px;
@@ -478,6 +484,69 @@
         .navbar-toggler-icon {
             background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
         }
+
+
+        /* Ensure carousel items are positioned relative */
+        .carousel-item {
+            position: relative;
+            height: 600px;
+            /* keep your height consistent */
+        }
+
+        /* Full dark translucent overlay over the image */
+        .carousel-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            position: relative;
+            z-index: 0;
+        }
+
+        .carousel-item::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.35);
+            /* dark translucent overlay */
+            z-index: 1;
+        }
+
+        /* Caption stays above the overlay */
+        .carousel-caption {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 2;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .caption-bg {
+            position: relative;
+            z-index: 2;
+            /* keep caption above overlay */
+            /* background-color: rgba(0, 0, 0, 0.25); */
+            /* optional light background */
+            padding: 2rem;
+            border-radius: 0.5rem;
+        }
+
+        @media (min-width:992px) and (max-width:1400px) {
+            .feature-card {
+                /* width: 200px !important; */
+                height: 300px !important;
+            }
+
+        }
     </style>
 </head>
 
@@ -500,7 +569,7 @@
 
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link " href="index.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="service.html">Services</a></li>
                     <li class="nav-item"><a class="nav-link" href="innovation.html">Innovation</a></li>
@@ -514,71 +583,77 @@
 
 
 
-    <div id="heroCarousel" class="carousel carousel_section  slide carousel-fade" data-bs-ride="carousel"
-        style="margin-top: 76px;">
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
-            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
-            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
-            <!-- <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="3"></button> -->
+    <section>
+        <div id="heroCarousel" class="carousel carousel_section slide carousel-fade" data-bs-ride="carousel"
+            style="margin-top: 76px;">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+            </div>
+
+            <div class="carousel-inner">
+                <div class="carousel-item active position-relative">
+                    <img src="./assets/img/slider1.png" class="d-block w-100" alt="Aircraft in Flight"
+                        style="height: 600px; object-fit: cover;">
+
+                    <!-- Full Dark Overlay -->
+                    <div
+                        style="position: absolute; top:0; left:0; width:100%; height:100%; background-color: rgba(0,0,0,0.5); z-index:1;">
+                    </div>
+
+                    <div class="carousel-caption d-flex flex-column justify-content-center h-100"
+                        style="top:0; bottom:0; z-index:2;">
+                        <h2 class="display-4 fw-bold mb-3" style="color: var(--accent-blue);">Excellence in Aviation
+                        </h2>
+                        <p class="lead mb-4" style="color: var(--text-light);">World-Class MRO Solutions for Modern
+                            Fleets</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item position-relative">
+                    <img src="./assets/img/slider2.png" class="d-block w-100" alt="Aircraft Maintenance"
+                        style="height: 600px; object-fit: cover;">
+                    <div
+                        style="position: absolute; top:0; left:0; width:100%; height:100%; background-color: rgba(0,0,0,0.5); z-index:1;">
+                    </div>
+
+                    <div class="carousel-caption d-flex flex-column justify-content-center h-100"
+                        style="top:0; bottom:0; z-index:2;">
+                        <h2 class="display-4 fw-bold mb-3" style="color: var(--accent-blue);">Precision Engineering</h2>
+                        <p class="lead mb-4" style="color: var(--text-light);">Advanced Diagnostics & Predictive
+                            Maintenance</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item position-relative">
+                    <img src="./assets/img/slider3.png" class="d-block w-100" alt="AI Technology"
+                        style="height: 600px; object-fit: cover;">
+                    <div
+                        style="position: absolute; top:0; left:0; width:100%; height:100%; background-color: rgba(0,0,0,0.5); z-index:1;">
+                    </div>
+
+                    <div class="carousel-caption d-flex flex-column justify-content-center h-100"
+                        style="top:0; bottom:0; z-index:2;">
+                        <h2 class="display-4 fw-bold mb-3" style="color: var(--accent-blue);">AI-Powered Innovation</h2>
+                        <p class="lead mb-4" style="color: var(--text-light);">Smart Maintenance Through Artificial
+                            Intelligence</p>
+                    </div>
+                </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="./assets/img/slider1.png" class="d-block w-100" alt="Aircraft in Flight"
-                    style="height: 600px; object-fit: cover; filter: brightness(0.7);">
-                <!-- <img src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=1600&auto=format&fit=crop" class="d-block w-100" alt="Aircraft in Flight" style="height: 600px; object-fit: cover; filter: brightness(0.7);"> -->
-                <div class="carousel-caption d-flex flex-column justify-content-center h-100"
-                    style="top: 0; bottom: 0;">
-                    <h2 class="display-4 fw-bold mb-3"
-                        style="color: var(--accent-blue); text-shadow: 2px 2px 4px rgba(0,0,0,0.8);">Excellence in
-                        Aviation</h2>
-                    <p class="lead mb-4" style="color: var(--text-light); text-shadow: 1px 1px 3px rgba(0,0,0,0.8);">
-                        World-Class MRO Solutions for Modern Fleets</p>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="./assets/img/slider2.png" class="d-block w-100" alt="Aircraft Maintenance"
-                    style="height: 600px; object-fit: cover; filter: brightness(0.7);">
-                <!-- <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=1600&auto=format&fit=crop" class="d-block w-100" alt="Aircraft Maintenance" style="height: 600px; object-fit: cover; filter: brightness(0.7);"> -->
-                <div class="carousel-caption d-flex flex-column justify-content-center h-100"
-                    style="top: 0; bottom: 0;">
-                    <h2 class="display-4 fw-bold mb-3"
-                        style="color: var(--accent-blue); text-shadow: 2px 2px 4px rgba(0,0,0,0.8);">Precision
-                        Engineering</h2>
-                    <p class="lead mb-4" style="color: var(--text-light); text-shadow: 1px 1px 3px rgba(0,0,0,0.8);">
-                        Advanced Diagnostics & Predictive Maintenance</p>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="./assets/img/slider3.png" class="d-block w-100" alt="AI Technology"
-                    style="height: 600px; object-fit: cover; filter: brightness(0.7);">
-                <!-- <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=1600&auto=format&fit=crop" class="d-block w-100" alt="AI Technology" style="height: 600px; object-fit: cover; filter: brightness(0.7);"> -->
-                <div class="carousel-caption d-flex flex-column justify-content-center h-100"
-                    style="top: 0; bottom: 0;">
-                    <h2 class="display-4 fw-bold mb-3"
-                        style="color: var(--accent-blue); text-shadow: 2px 2px 4px rgba(0,0,0,0.8);">AI-Powered
-                        Innovation</h2>
-                    <p class="lead mb-4" style="color: var(--text-light); text-shadow: 1px 1px 3px rgba(0,0,0,0.8);">
-                        Smart Maintenance Through Artificial Intelligence</p>
-                </div>
-            </div>
-            <!-- <div class="carousel-item">
-                <img src="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=1600&auto=format&fit=crop" class="d-block w-100" alt="Aviation Future" style="height: 600px; object-fit: cover; filter: brightness(0.7);">
-                <div class="carousel-caption d-flex flex-column justify-content-center h-100" style="top: 0; bottom: 0;">
-                    <h2 class="display-4 fw-bold mb-3" style="color: var(--accent-blue); text-shadow: 2px 2px 4px rgba(0,0,0,0.8);">Sustainable Aviation</h2>
-                    <p class="lead mb-4" style="color: var(--text-light); text-shadow: 1px 1px 3px rgba(0,0,0,0.8);">Environmental Stewardship & Operational Excellence</p>
-                </div>
-            </div> -->
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-    </div>
+
+    </section>
+
 
 
     <!-- Hero Section -->
@@ -645,28 +720,28 @@
                 </div>
             </div>
             <div class="row mt-5">
-                <div class="col-md-3 col-sm-6 mb-4">
+                <div class="col-lg-3 col-sm-6 mb-4">
                     <div class="feature-card">
                         <div class="feature-icon"><i class="bi bi-shield-check"></i></div>
                         <h3 class="feature-title">Safety First</h3>
                         <p class="feature-text">Uncompromised safety standards in every operation</p>
                     </div>
                 </div>
-                <div class="col-md-3 col-sm-6 mb-4">
+                <div class="col-lg-3 col-sm-6 mb-4">
                     <div class="feature-card">
                         <div class="feature-icon"><i class="bi bi-gear-wide-connected"></i></div>
                         <h3 class="feature-title">24/7 Support</h3>
                         <p class="feature-text">Round-the-clock technical assistance and AOG response</p>
                     </div>
                 </div>
-                <div class="col-md-3 col-sm-6 mb-4">
+                <div class="col-lg-3 col-sm-6 mb-4">
                     <div class="feature-card">
                         <div class="feature-icon"><i class="bi bi-award"></i></div>
                         <h3 class="feature-title">Certified Excellence</h3>
                         <p class="feature-text">Licensed engineers and OEM-aligned procedures</p>
                     </div>
                 </div>
-                <div class="col-md-3 col-sm-6 mb-4">
+                <div class="col-lg-3 col-sm-6 mb-4">
                     <div class="feature-card">
                         <div class="feature-icon"><i class="bi bi-graph-up-arrow"></i></div>
                         <h3 class="feature-title">Innovation</h3>
@@ -970,7 +1045,7 @@
             <div class="row mt-4">
                 <div class="col-md-4 mb-4">
                     <div class="feature-card">
-                        <div class="feature-icon"><i class="bi bi-leaf"></i></div>
+                        <div class="feature-icon"> <i class="fa-solid fa-leaf"></i></div>
                         <h3 class="feature-title">Energy Efficiency</h3>
                         <p class="feature-text">Optimized tooling and low-emission equipment for responsible resource
                             use</p>
@@ -1090,12 +1165,12 @@
             <div class="row">
 
                 <!-- Column 1: Logo -->
-                <div class="col-md-3 col-sm-6 mb-4 text-center text-md-start">
+                <div class="col-lg-3 col-sm-6 mb-4 text-center text-md-start">
                     <img src="assets/img/logo.png" alt="BTH Aviation Logo" style="width:200px;">
                 </div>
 
                 <!-- Column 2: Quick Links -->
-                <div class="col-md-3 col-sm-6 mb-4">
+                <div class="col-lg-3 col-sm-6 mb-4">
                     <h5 class="fw-bold mb-3" style="color:#ffffff;">Quick Links</h5>
                     <ul class="list-unstyled footer-links">
                         <li>
@@ -1122,7 +1197,7 @@
                 </div>
 
                 <!-- Column 3: Services -->
-                <div class="col-md-3 col-sm-6 mb-4">
+                <div class="col-lg-3 col-sm-6 mb-4">
                     <h5 class="fw-bold mb-3" style="color:#ffffff;">Our Services</h5>
                     <ul class="list-unstyled footer-links">
                         <li>
@@ -1166,7 +1241,7 @@
                 </div>
 
                 <!-- Column 4: Address -->
-                <div class="col-md-3 col-sm-6 mb-4">
+                <div class="col-lg-3 col-sm-6 mb-4">
                     <h5 class="fw-bold mb-3" style="color:#ffffff;">Contact Us</h5>
                     <ul class="list-unstyled" style="color:#cccccc;">
                         <li><i class="fas fa-map-marker-alt me-2" style="color:#3baaff;"></i>2nd Floor, Skyview Tower,

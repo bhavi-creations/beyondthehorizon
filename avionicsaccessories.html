@@ -563,6 +563,14 @@
         .navbar-toggler-icon {
             background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
         }
+
+        .service-sub-title{
+            font-size: 1.5rem;
+              font-weight: 600;
+              color: var(--accent-blue);
+              margin-bottom: 1rem;
+
+          }
       </style>
 </head>
 
@@ -580,7 +588,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link " href="index.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="service.html">Services</a></li>
                     <li class="nav-item"><a class="nav-link" href="innovation.html">Innovation</a></li>
@@ -618,12 +626,12 @@
             <div class="row align-items-center">
 
                 <!-- Image -->
-                <div class="col-md-6 col-12 mb-4 mb-md-0">
+                <div class="col-lg-6 col-12 mb-4 mb-md-0">
                     <img src="assets/img/service.png" alt="Base Maintenance" class="img-fluid rounded shadow">
                 </div>
 
                 <!-- Content -->
-                <div class="col-md-6 col-12">
+                <div class="col-lg-6 col-12">
                     <h3 class="service-title mb-3">Avionics Accessories Overhaul</h3>
                     <p class="service-description">
                         Our Avionics Accessories Overhaul services restore the accuracy and reliability of critical
@@ -631,23 +639,31 @@
                         OEM-aligned procedures, we ensure every unit meets strict performance standards.
                     </p>
 
-                    <strong class="d-block mb-3">Core capabilities include:</strong>
+                    .service-sub-title{
+                        font-size: 1.5rem;
+                          font-weight: 600;
+                          color: var(--accent-blue);
+                          margin-bottom: 1rem;
+            
+                      }
+
+                    <strong class="d-block mb-3 service-sub-title">Core capabilities include:</strong>
 
                     <ul class="list-unstyled service-list">
-                        <li><i class="fas fa-check-circle me-2 text-primary"></i>Teardown, inspection, and functional
-                            testing of LRUs</li>
-                        <li><i class="fas fa-check-circle me-2 text-primary"></i>Circuit-board repair, component
-                            replacement, and recalibration</li>
-                        <li><i class="fas fa-check-circle me-2 text-primary"></i>Overhaul of gyros, servo-motors, and
-                            synchro units</li>
-                        <li><i class="fas fa-check-circle me-2 text-primary"></i>Communication & navigation module
-                            servicing (VHF, UHF, ADF, transponders)</li>
-                        <li><i class="fas fa-check-circle me-2 text-primary"></i>Pitot-static and air data accessory
-                            calibration</li>
-                        <li><i class="fas fa-check-circle me-2 text-primary"></i>Wiring harness repair and connector
-                            replacement</li>
-                        <li><i class="fas fa-check-circle me-2 text-primary"></i>Final verification on automated test
-                            equipment (ATE)</li>
+                        <p><i class="fas fa-check-circle me-2 text-primary"></i>Teardown, inspection, and functional
+                            testing of LRUs</p>
+                        <p><i class="fas fa-check-circle me-2 text-primary"></i>Circuit-board repair, component
+                            replacement, and recalibration</p>
+                       <p><i class="fas fa-check-circle me-2 text-primary"></i>Overhaul of gyros, servo-motors, and
+                            synchro units</p>
+                        <p><i class="fas fa-check-circle me-2 text-primary"></i>Communication & navigation module
+                            servicing (VHF, UHF, ADF, transponders)</p>
+                       <p><i class="fas fa-check-circle me-2 text-primary"></i>Pitot-static and air data accessory
+                            calibration</p>
+                        <p><i class="fas fa-check-circle me-2 text-primary"></i>Wiring harness repair and connector
+                            replacement</p>
+                        <p><i class="fas fa-check-circle me-2 text-primary"></i>Final verification on automated test
+                            equipment (ATE)</p>
                     </ul>
                     <p class="service-description">
                         With advanced diagnostic benches and calibrated instruments, we deliver precise, reliable, and
@@ -676,12 +692,12 @@
             <div class="row">
 
                 <!-- Column 1: Logo -->
-                <div class="col-md-3 col-sm-6 mb-4 text-center text-md-start">
+                <div class="col-lg-3 col-sm-6 mb-4 text-center text-md-start">
                     <img src="assets/img/logo.png" alt="BTH Aviation Logo" style="width:200px;">
                 </div>
 
                 <!-- Column 2: Quick Links -->
-                <div class="col-md-3 col-sm-6 mb-4">
+                <div class="col-lg-3 col-sm-6 mb-4">
                     <h5 class="fw-bold mb-3" style="color:#ffffff;">Quick Links</h5>
                     <ul class="list-unstyled footer-links">
                         <li>
@@ -708,7 +724,7 @@
                 </div>
 
                 <!-- Column 3: Services -->
-                <div class="col-md-3 col-sm-6 mb-4">
+                <div class="col-lg-3 col-sm-6 mb-4">
                     <h5 class="fw-bold mb-3" style="color:#ffffff;">Our Services</h5>
                     <ul class="list-unstyled footer-links">
                         <li>
@@ -752,7 +768,7 @@
                 </div>
 
                 <!-- Column 4: Address -->
-                <div class="col-md-3 col-sm-6 mb-4">
+                <div class="col-lg-3 col-sm-6 mb-4">
                     <h5 class="fw-bold mb-3" style="color:#ffffff;">Contact Us</h5>
                     <ul class="list-unstyled" style="color:#cccccc;">
                         <li><i class="fas fa-map-marker-alt me-2" style="color:#3baaff;"></i>2nd Floor, Skyview Tower,
