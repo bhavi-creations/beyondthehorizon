@@ -45,25 +45,25 @@
                     <strong class="d-block mb-3 service-sub-title">Core technical activities include: </strong>
 
                     <ul class=" service-list">
-                       <p><i class="fas fa-check-circle me-2 text-primary"></i>Full teardown with  NDT testing
+                        <p class="service-item"><i class="fas fa-check-circle me-2 text-primary"></i>Full teardown with  NDT testing
                             (FPI, MPI, Eddy Current)</p>
-                            <p> <i class="fas fa-check-circle me-2 text-primary"></i> Shock strut
+                             <p class="service-item"> <i class="fas fa-check-circle me-2 text-primary"></i> Shock strut
                                 servicing,nitrogen charging, and hydraulic fluid renewal
-                                <p><i class="fas fa-check-circle me-2 text-primary"></i>Replacement of bushings,
+                                 <p class="service-item"><i class="fas fa-check-circle me-2 text-primary"></i>Replacement of bushings,
                                 bearings, pistons, and chrome-plated cylinders</p>
-                                <p><i class="fas fa-check-circle me-2 text-primary"></i>Torque link, trunnion, and drag
+                                 <p class="service-item"><i class="fas fa-check-circle me-2 text-primary"></i>Torque link, trunnion, and drag
                                 strut reconditioning</p>
-                                <p><i class="fas fa-check-circle me-2 text-primary"></i>Actuator, servo-valve, and
+                                 <p class="service-item"><i class="fas fa-check-circle me-2 text-primary"></i>Actuator, servo-valve, and
                                 retraction/extension system calibration</p>
-                                <p><i class="fas fa-check-circle me-2 text-primary"></i> Brake assembly overhaul
+                                 <p class="service-item"><i class="fas fa-check-circle me-2 text-primary"></i> Brake assembly overhaul
                             , heat pack replacement, and hydraulic line flushing</p>
 
 
-                            <p><i class="fas fa-check-circle me-2 text-primary"></i> Wheel hub inspection, rim
+                             <p class="service-item"><i class="fas fa-check-circle me-2 text-primary"></i> Wheel hub inspection, rim
                                 machining, and bearing repack</li>
-                                <p><i class="fas fa-check-circle me-2 text-primary"></i> Precision reassembly with OEM
+                                 <p class="service-item"><i class="fas fa-check-circle me-2 text-primary"></i> Precision reassembly with OEM
                                 torque values and tolerance settings</p>
-                                <p><i class="fas fa-check-circle me-2 text-primary"></i> Load simulation tests and
+                                 <p class="service-item"><i class="fas fa-check-circle me-2 text-primary"></i> Load simulation tests and
                                 hydraulic system performance checks</p>
 
                     </ul>
