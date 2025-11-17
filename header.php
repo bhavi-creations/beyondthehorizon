@@ -11,6 +11,7 @@
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="apple-touch-icon" href="./assets/css/style2.css">
 
 
 
@@ -42,11 +43,11 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link " href="index.php">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="about.php">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="service.php">Services</a></li>
-                    <li class="nav-item"><a class="nav-link" href="innovation.php">Innovation</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.php#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="service.php#service">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="innovation.php#innovation">Innovation</a></li>
                     <!-- <li class="nav-item"><a class="nav-link" href="#sustainability">Sustainability</a></li> -->
-                    <li class="nav-item"><a class="nav-link" href="contact.php">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.php#contact">Contact</a></li>
                 </ul>
             </div>
         </div>

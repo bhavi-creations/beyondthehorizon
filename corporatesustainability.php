@@ -22,7 +22,7 @@
     </section>
 
 
-    <section class="service-section py-5">
+    <section class="service-section py-5" id="corporate">
         <div class="container">
             <div class="row align-items-center">
 

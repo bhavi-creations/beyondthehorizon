@@ -22,7 +22,7 @@
     </section>
 
     <!-- Hero Section -->
-    <section id="about" class="section about-section">
+    <section id="Service" class="section about-section">
         <div class="container">
             <section id="services" class="section">
                 <div class="container">

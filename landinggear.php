@@ -22,13 +22,13 @@
     </section>
 
 
-    <section class="service-section py-5">
+    <section class="service-section py-5" id="landinggear">
         <div class="container">
             <div class="row align-items-center">
 
                 <!-- Image -->
                 <div class="col-lg-6 col-12 mb-4 mb-md-0">
-                    <img src="assets/img/service.png" alt="Base Maintenance" class="img-fluid rounded shadow">
+                    <img src="assets/img/landing_gear.png" alt="Base Maintenance" class="img-fluid rounded shadow">
                 </div>
 
                 <!-- Content -->

@@ -75,12 +75,14 @@
 
 
 <!-- Hero Section -->
-<section id="home" class="hero-section py-5">
+<!-- <section id="home" class="hero-section py-5">
     <div class="container">
         <div class="row align-items-center second_section">
             <div class="col-lg-7 hero-content mt-5">
-                <h1 class="hero-title">Beyond The Horizon</h1>
-                <p class="hero-subtitle">Where Engineering Excellence Meets Aviation's Future</p>
+                <h1 class="hero-title ">BAHARAT AVIATION (BTH-MRO)</h1>
+                <p class="hero-subtitle">Launching India's Next-Generation Aircraft MRO Centre.</p>
+
+                <p class="hero-subtitle">$90 Million Committed Investment in Tirupati.</p>
 
                 <p class="hero-description" id="heroText">
                     At BTH – Beyond The Horizon, we redefine modern MRO by delivering world-class maintenance,
@@ -105,7 +107,230 @@
             </div>
         </div>
     </div>
+</section> -->
+
+
+<section id="home" class="hero-section">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-7 hero-content">
+                <h1 class="hero-title">BAHARAT AVIATION<br>(BTH-MRO)</h1>
+
+                <p class="hero-subtitle">Launching India's Next-Generation Aircraft MRO Centre</p>
+
+                <p class="hero-subtitle">$90 Million Committed Investment in Tirupati</p>
+
+                <p class="hero-description">
+                    A striking, high-quality rendering of the proposed 60-hectare BTH-MRO facility with state-of-the-art hangars, juxtaposed with advanced AI Predictive Maintenance systems revolutionizing aviation service excellence.
+                </p>
+
+                <div class="stats-container">
+                    <div class="stat-item">
+                        <div class="stat-number">60</div>
+                        <div class="stat-label">Hectares</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">$90M</div>
+                        <div class="stat-label">Investment</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">AI</div>
+                        <div class="stat-label">Powered</div>
+                    </div>
+                </div>
+
+                <!-- <a href="#contact" class="cta-button">Explore Our Vision</a> -->
+            </div>
+
+            <div class="col-lg-5 text-center mt-5 mt-lg-0">
+                <div class="hero-image-container">
+                    <img src="./assets/img/service2.png" alt="BTH-MRO Aircraft Facility" class="img-fluid hero-image">
+
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
+
+
+
+<!-- 2nd section  -->
+
+<section class="strategic-section py-5 position-relative">
+    <div class="container py-5">
+        <!-- Section Header -->
+        <div class="text-center mb-5" style="animation: fadeInUp 0.8s ease;">
+            <h2 class="section-title display-3 fw-bold mb-4">The Strategic Imperative</h2>
+            <p class="section-subtitle fs-5 mx-auto">Why India is the Future of Global MRO Excellence</p>
+        </div>
+
+        <!-- Feature Cards -->
+        <div class="row g-4 mb-5" style="animation: fadeInUp 0.8s ease 0.2s backwards;">
+            <!-- MRO Gap Card -->
+            <div class="col-lg-6">
+                <div class="feature-card rounded-4 p-4 h-100">
+                    <div class="d-flex align-items-start gap-4">
+                        <div class="feature-icon rounded-3 flex-shrink-0">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-white fw-bold fs-4 mb-3">The MRO Gap</h3>
+                            <p class="text-light mb-0 lh-lg">
+                                Addressing the regional deficit in high-quality, cost-efficient heavy maintenance capacity.
+                                BTH-MRO fills a critical void in South Asia, Middle East, and Africa with world-class facilities
+                                and cutting-edge technology.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cost Advantage Card -->
+            <div class="col-lg-6">
+                <div class="feature-card rounded-4 p-4 h-100">
+                    <div class="d-flex align-items-start gap-4">
+                        <div class="feature-icon rounded-3 flex-shrink-0">
+                            <i class="fas fa-dollar-sign"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-white fw-bold fs-4 mb-3">The Cost Advantage</h3>
+                            <p class="text-light mb-3 lh-lg">
+                                Strategic financial benefits passed directly to clients:
+                            </p>
+                            <div class="highlight-badge px-4 py-3 rounded-3 d-inline-block">
+                                <i class="fas fa-bolt me-2"></i>
+                                <span class="fw-bold fs-5">40-60% Lower Operating Costs</span>
+                                <span class="d-block small mt-1">vs. Western MROs</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- National Commitment -->
+        <div class="row mb-5" style="animation: fadeInUp 0.8s ease 0.4s backwards;">
+            <div class="col-12">
+                <div class="quote-card rounded-4 p-5 position-relative">
+                    <i class="fas fa-quote-left quote-icon"></i>
+                    <div class="position-relative" style="z-index: 2;">
+                        <h3 class="text-white fw-bold fs-3 mb-4">
+                            <i class="fas fa-flag me-3 text-primary"></i>National Commitment: Make in India
+                        </h3>
+                        <blockquote class="mb-4">
+                            <p class="text-light fs-5 lh-lg fst-italic mb-0">
+                                "We are building an MRO legacy in India—a dedicated MRO industry populated with skilled Tech-Engineers,
+                                cost-effective technical expertise to support global hubs, including Middle East and Africa."
+                            </p>
+                        </blockquote>
+                        <div class="row g-4 mt-4">
+                            <div class="col-md-6">
+                                <div class="d-flex align-items-start gap-3">
+                                    <div class="stat-icon rounded-2 flex-shrink-0">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                    </div>
+                                    <div>
+                                        <h5 class="text-white fw-semibold mb-2">Tirupati Advantage</h5>
+                                        <p class="text-light small mb-0">
+                                            Excellent connectivity and religious significance ensuring long-term government
+                                            and community stability. A location built for sustainable growth.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="d-flex align-items-start gap-3">
+                                    <div class="stat-icon rounded-2 flex-shrink-0">
+                                        <i class="fas fa-users"></i>
+                                    </div>
+                                    <div>
+                                        <h5 class="text-white fw-semibold mb-2">Skilled Workforce</h5>
+                                        <p class="text-light small mb-0">
+                                            Building India's largest pool of certified aviation technicians and engineers,
+                                            ready to serve global markets with precision and excellence.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Quick Facts & Scale -->
+        <div style="animation: fadeInUp 0.8s ease 0.6s backwards;">
+            <div class="text-center mb-5">
+                <h3 class=" display-5 fw-bold mb-3 section-title">Quick Facts & Scale</h3>
+                <p class="text-light fs-5">Data Points for Immediate Impact</p>
+            </div>
+
+            <!-- Stats Grid -->
+            <div class="row g-4 mb-5">
+                <div class="col-md-6 col-lg-3">
+                    <div class="stat-card rounded-4 p-4 text-center h-100">
+                        <i class="fas fa-dollar-sign text-primary fs-1 mb-3"></i>
+                        <div class="stat-number display-4 fw-bold mb-2">$90M</div>
+                        <div class="text-light fw-semibold">USD Committed Capital</div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="stat-card rounded-4 p-4 text-center h-100">
+                        <i class="fas fa-warehouse text-primary fs-1 mb-3"></i>
+                        <div class="stat-number display-4 fw-bold mb-2">60</div>
+                        <div class="text-light fw-semibold">Hectares Total Capacity</div>
+                        <small class="text-white d-block mt-2">(20 Hectares Airside)</small>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="stat-card rounded-4 p-4 text-center h-100">
+                        <i class="fas fa-plane text-primary fs-1 mb-3"></i>
+                        <div class="stat-number display-4 fw-bold mb-2">8+</div>
+                        <div class="text-light fw-semibold">Aircraft Models Supported</div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="stat-card rounded-4 p-4 text-center h-100">
+                        <i class="fas fa-cogs text-primary fs-1 mb-3"></i>
+                        <div class="stat-number display-4 fw-bold mb-2">6,000</div>
+                        <div class="text-light fw-semibold">Component Items</div>
+                        <small class="text-white d-block mt-2">Within 7 Years</small>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Target Fleet -->
+            <div class="row">
+                <div class="col-lg-6 mx-auto">
+                    <div class="stat-card rounded-4 p-4">
+                        <h4 class="text-white fw-bold mb-4 text-center">
+                            <i class="fas fa-plane-departure text-primary me-2"></i>Target Fleet Coverage
+                        </h4>
+                        <div class="aircraft-list justify-content-center">
+                            <span class="aircraft-badge badge rounded-pill px-3 py-2">Airbus A220</span>
+                            <span class="aircraft-badge badge rounded-pill px-3 py-2">Airbus A320</span>
+                            <span class="aircraft-badge badge rounded-pill px-3 py-2">Airbus A330</span>
+                            <span class="aircraft-badge badge rounded-pill px-3 py-2">Boeing 737</span>
+                            <span class="aircraft-badge badge rounded-pill px-3 py-2">Boeing 767</span>
+                            <span class="aircraft-badge badge rounded-pill px-3 py-2">Boeing 777</span>
+                            <span class="aircraft-badge badge rounded-pill px-3 py-2">Boeing 787</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
 
 <!-- About Section -->
 <section id="about" class="section about-section">
@@ -113,33 +338,67 @@
         <div class="text-center mb-5">
             <!-- <h2 class="section-title  section-title-about">About BTH Aviation</h2> -->
 
-            <h2 class="section-title section-title-about">About BTH Aviation</h2>
+            <h2 class="section-title section-title-about">The AI Revolution in MRO</h2>
 
-            <p class="section-subtitle">BTH: Where Engineering Excellence Meets Aviation's Future. Excellence in
-                Motion.</p>
+            <p class="section-subtitle">BTH-MRO: Always 500 Hours Ahead of Failure</p>
         </div>
         <div class="row">
             <div class="col-lg-6 mb-4">
-                <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=800&auto=format&fit=crop"
+                <!-- <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=800&auto=format&fit=crop"
                     alt="Aircraft Maintenance" class="img-fluid"
-                    style="border-radius: 15px; box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1); height: 300px; ">
+                    style="border-radius: 15px; box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1); height: 300px; "> -->
+                <img src="./assets/img/service4.png" alt="" class="img-fluid">
             </div>
             <div class="col-lg-6 mb-4">
                 <p style="font-size: 1.1rem; line-height: 1.8; color: var(--dark-text);">
-                    BTH - Beyond The Horizon stands at the forefront of next-generation Aviation MRO , serving as a
-                    future-ready partner that delivers complete, end-to-end maintenance, repair, and overhaul
-                    solutions. We are a one-stop-shop for all engineering requirements for commercial, charter,
-                    government, and private operators.
+                    Our proprietary AI-enabled Predictive Aircraft Health Monitoring (PHM) system transforms maintenance from reactive to proactive.
+                    <br>
+                    It analyzes live and historical flight data to forecast technical events well in advance.
+
                 </p>
-                <!-- <p style="font-size: 1.1rem; line-height: 1.8; color: var(--dark-text);">
-                        Our team of licensed engineers and skilled technicians brings deep capability across airframe,
-                        engine, avionics, and component maintenance. Using advanced diagnostics, predictive tools, and a
-                        robust quality management system, we ensure every aircraft meets international regulatory and
-                        safety benchmarks.
-                    </p> -->
+                <p style="font-size: 1.1rem; line-height: 1.8; color: var(--dark-text);">
+
+                </p>
+                <div class="ai-advantage-box p-4 mt-4">
+                    <h3 class="mb-3 service-title">The AI Advantage</h3>
+
+                    <p class="ai-point service-item">
+                        <i class="fas fa-check-circle me-2 text-primary"></i>
+                        Predicts component and maintenance requirements 500+ hours ahead
+                    </p>
+
+                    <p class="ai-point service-item">
+                        <i class="fas fa-check-circle me-2 text-primary"></i>
+                        Minimizes AOG events with proactive maintenance scheduling
+                    </p>
+
+                    <p class="ai-point service-item">
+                        <i class="fas fa-check-circle me-2 text-primary"></i>
+                        Integrates directly with our 24/7 AI-supported Maintenance Control Center (MCC)
+                    </p>
+
+                    <p class="ai-point service-item">
+                        <i class="fas fa-check-circle me-2 text-primary"></i>
+                        Ensures uninterrupted operational reliability for airlines
+                    </p>
+                </div>
+
                 <a href="about.php" class="btn btn-custom">Read More</a>
             </div>
         </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
         <div class="row mt-5">
             <div class="col-lg-3 col-sm-6 mb-4">
                 <div class="feature-card">
@@ -172,6 +431,17 @@
         </div>
     </div>
 </section>
+
+
+
+
+
+
+
+
+
+
+
 
 <!-- Services Section -->
 <div class="section team-area section-padding">
@@ -379,11 +649,13 @@
 
 
 
+
+
 <!-- AI Innovation Section -->
 <section id="innovation" class="section ai-section">
     <div class="container position-relative">
         <div class="text-center mb-5">
-            <h2 class="section-title-mro section-title" >AI-Enhanced MRO Innovation</h2>
+            <h2 class="section-title-mro section-title">AI-Enhanced MRO Innovation</h2>
             <p class="section-subtitle">Redefining the Future of Aircraft Maintenance</p>
         </div>
         <div class="row justify-content-center">
@@ -443,27 +715,110 @@
     </div>
 </section>
 
+
+
+<section class="capabilities-wrapper py-5">
+    <div class="container">
+        <!-- Hero Banner -->
+        <div class="capabilities-hero text-center mb-5">
+            <h1 class="capabilities-hero-title section-title">Full Fleet Spectrum & Component Mastery</h1>
+        </div>
+
+        <!-- Section 1: Base Maintenance & Heavy Checks -->
+        <div class="row align-items-center capabilities-row mb-5">
+            <div class="col-lg-6 col-md-12 text-center mb-4 mb-lg-0">
+                <img src="assets/img/service2.png" alt="Base Maintenance" class="capabilities-image img-fluid rounded-3 shadow">
+            </div>
+            <div class="col-lg-6 col-md-12">
+                <div class="capabilities-content">
+                    <h2 class="capabilities-section-title service-title">Base Maintenance & Heavy Checks</h2>
+                    <h4 class="capabilities-subtitle">High-Capacity, High-Throughput Base Maintenance</h4>
+                    <ul class="capabilities-bullets" id="slider1">
+                        <li>Efficient C-Check and D-Check operations</li>
+                        <li>Expertise in structural repairs</li>
+                        <li>Complete cabin modification suites</li>
+                        <li>Thorough documentation for end-of-lease and lessor compliance</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 2: Component Overhaul & Specialized Shops -->
+        <div class="row align-items-center capabilities-row mb-5 flex-lg-row-reverse">
+            <div class="col-lg-6 col-md-12 text-center mb-4 mb-lg-0">
+                <img src="assets/img/7.png" alt="Component Overhaul" class="capabilities-image img-fluid rounded-3 shadow">
+            </div>
+            <div class="col-lg-6 col-md-12">
+                <div class="capabilities-content">
+                    <h2 class="capabilities-section-title service-title">Component Overhaul & Specialized Shops</h2>
+                    <h4 class="capabilities-subtitle">Component Mastery: Toward 6,000+ Item Capability</h4>
+                    <ul class="capabilities-bullets" id="slider2">
+                        <li>Full Engine & APU Overhaul</li>
+                        <li>Landing Gear Overhaul with advanced NDT</li>
+                        <li>Level-3 Avionics Repair: Radar, Communications, Flight Instruments</li>
+                        <li>Specialized NDT labs, hydraulics test facilities, and advanced test cells</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 3: Future Readiness -->
+        <div class="row align-items-center capabilities-row">
+            <div class="col-lg-6 col-md-12 text-center mb-4 mb-lg-0">
+                <img src="assets/img/specialized.png" alt="Future Readiness" class="capabilities-image img-fluid rounded-3 shadow">
+            </div>
+            <div class="col-lg-6 col-md-12">
+                <div class="capabilities-content">
+                    <h2 class="capabilities-section-title service-title">Future Readiness</h2>
+                    <h4 class="capabilities-subtitle ">Extending Life, Embracing the Future</h4>
+                    <ul class="capabilities-bullets" id="slider3">
+                        <li>Aging aircraft life-extension solutions</li>
+                        <li>eVTOL-MRO capability for next-generation mobility</li>
+                        <li>Battery shops, hydraulic labs, and specialized engineering units</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
 <!-- Sustainability Section -->
 <section id="sustainability" class="section   section-padding">
     <div class="container">
         <div class="text-center mb-5">
-            <h2 class="section-title">Corporate Sustainability</h2>
-            <p class="section-subtitle">Responsible Operations for a Sustainable Future</p>
+            <h2 class="section-title">Secure Your Strategic MRO Capacity</h2>
+            <!-- <p class="section-subtitle">Responsible Operations for a Sustainable Future</p> -->
         </div>
         <div class="row">
             <div class="col-lg-8 mx-auto mb-4">
-                <p style="font-size: 1.1rem; line-height: 1.8; color: var(--dark-text); margin-bottom: 2rem;">
-                    We are committed to responsible, forward-thinking operations that support environmental
-                    stewardship, operational efficiency, and long-term industry sustainability. Our approach
-                    integrates modern technology, optimized processes, and ethical business practices to reduce our
-                    environmental footprint while enhancing value for customers and communities.
-                </p>
+                <div class="partnership-content">
+                    <h2 class="partnership-section-title">Why Partner Now?</h2>
+                    <p class="partnership-description">
+                        Early engagement ensures long-term access to premium MRO capacity in a global environment where demand continues to rise.
+                        For lessors, this means dependable TAT, high-quality documentation, and consistent asset protection.
+                    </p>
+                </div>
             </div>
             <div class="col-lg-8 mx-auto mb-4">
                 <img src="./assets/img/service5.png" alt="Sustainable Aviation" class="img-fluid"
                     style="border-radius: 15px; box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);">
             </div>
         </div>
+        <div class="partnership-card card-shadow p-4 mb-4">
+            <h2 class="partnership-section-title">Decades of Global MRO Expertise</h2>
+            <ul class="partnership-bullets">
+                <li>Experienced leadership team with deep MRO and airline operations background</li>
+                <li>Scalable workforce plan to ensure service consistency and availability</li>
+            </ul>
+        </div>
+
+
         <div class="row mt-4">
             <div class="col-md-4 mb-4">
                 <div class="feature-card">
@@ -496,7 +851,7 @@
     <div class="container">
         <div class="text-center mb-5">
             <h2 class="section-title">Reach Us</h2>
-            <p class="section-subtitle">Your Next-Level Aviation Support is Just a Message Away</p>
+            <p class="section-subtitle">Get in touch with our expert to explore tailored MRO solutions designed for your fleet's success.</p>
         </div>
 
         <div class="row justify-content-center align-items-start">
@@ -520,46 +875,50 @@
                         </a> -->
 
                     <!-- Contact Form -->
-                    <form class="contact-form">
+                    <form action="contactform.php" method="post" role="form" class="php-email-form" data-aos-delay="100">
+                        <div class="row g-3">
 
-                        <div class="row">
-                            <!-- Full Name -->
-                            <div class="col-md-6 mb-3">
-                                <label class="form-label">Full Name</label>
-                                <input type="text" class="form-control" placeholder="Enter your full name" required>
+                            <div class="col-12 col-md-6">
+                                <input type="text" name="name" class="form-control form-control-uniform" placeholder="Your Name">
                             </div>
 
-                            <!-- Email -->
-                            <div class="col-md-6 mb-3">
-                                <label class="form-label">Email Address</label>
-                                <input type="email" class="form-control" placeholder="Enter your email" required>
+                            <div class="col-12 col-md-6">
+                                <input type="email" name="Company" class="form-control form-control-uniform" placeholder="Company Name">
                             </div>
+
+                            <div class="col-12 col-md-6">
+                                <input type="email" name="Email" class="form-control form-control-uniform" placeholder="Enter Your Email">
+                            </div>
+
+                            <div class="col-12 col-md-6">
+                                <input type="text" name="title" class="form-control form-control-uniform" placeholder="Title">
+                            </div>
+
+                            <div class="col-12 col-md-6">
+                                <select class="form-select form-control-uniform" name="service">
+                                    <option selected>Primary Interest</option>
+                                    <option value="Base Maintenance">Base Maintenance</option>
+                                    <option value="Component Overhaul">Component Overhaul</option>
+                                    <option value="Partnership">Partnership</option>
+                                    <!-- <option value="Invisible aligners">Invisible aligners</option>
+                                    <option value="Teeth whitening">Teeth whitening</option>
+                                    <option value="Teeth cleaning">Teeth cleaning</option>
+                                    <option value="Teeth jewellery">Teeth jewellery</option>
+                                    <option value="root canal">Root canal</option> -->
+                                </select>
+                            </div>
+
+                            <div class="mb-3 col-12 col-md-6 ">
+                                <!-- <label class="form-label">Message</label> -->
+                                <textarea class="form-control" name="meassage" rows="1" placeholder="Write your message"
+                                    required></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-custom w-100">
+                                <i class="bi bi-send me-2"></i>Send Message
+                            </button>
+
                         </div>
-
-                        <div class="row">
-                            <!-- Phone -->
-                            <div class="col-md-6 mb-3">
-                                <label class="form-label">Phone Number</label>
-                                <input type="text" class="form-control" placeholder="Enter your phone number">
-                            </div>
-
-                            <!-- Subject -->
-                            <div class="col-md-6 mb-3">
-                                <label class="form-label">Subject</label>
-                                <input type="text" class="form-control" placeholder="Enter subject">
-                            </div>
-                        </div>
-
-                        <!-- Message -->
-                        <div class="mb-3">
-                            <label class="form-label">Message</label>
-                            <textarea class="form-control" rows="4" placeholder="Write your message"
-                                required></textarea>
-                        </div>
-
-                        <button type="submit" class="btn btn-custom w-100">
-                            <i class="bi bi-send me-2"></i>Send Message
-                        </button>
                     </form>
 
                 </div>
@@ -570,11 +929,13 @@
                 <div class="map-container"
                     style="border-radius: 15px; overflow: hidden; height: 100%; min-height: 450px;">
                     <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.4068558766004!2d78.47442187494164!3d17.433378883451502!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb91ec3e8fbb4d%3A0x8c594b1b5e63a5c6!2sHyderabad%2C%20Telangana!5e0!3m2!1sen!2sin!4v1731180000000"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3877.3275672949653!2d79.54497857485377!3d13.637827386742183!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a4d4892440e6095%3A0xf1baad272b949686!2sTirupati%20International%20Airport!5e0!3m2!1sen!2sin!4v1763376722856!5m2!1sen!2sin"
                         width="100%" height="450px" style="border:0;" allowfullscreen="" loading="lazy">
                     </iframe>
                 </div>
             </div>
+
+
 
         </div>
     </div>
