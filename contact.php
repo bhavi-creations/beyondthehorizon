@@ -27,7 +27,8 @@
     <div class="container">
         <div class="text-center mb-5">
             <h2 class="section-title">Reach Us</h2>
-            <p class="section-subtitle">Get in touch with our expert to explore tailored MRO solutions designed for your fleet's success.</p>
+            <p class="section-subtitle">Connect with Our Business Development Team.</p>
+            <!-- <p class="section-subtitle">Get in touch with our expert to explore tailored MRO solutions designed for your fleet's success.</p> -->
         </div>
 
         <div class="row justify-content-center align-items-start">
