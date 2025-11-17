@@ -1,0 +1,91 @@
+<?php include 'header.php'; ?>
+
+    <section id="about-hero" style="position: relative; height: 500px; margin-top: 140px;">
+        <!-- Background Image -->
+        <img src="./assets/img/slider1.png" alt="About Us" class="img-fluid w-100 h-100" style="object-fit: cover;">
+
+        <!-- Black Overlay -->
+        <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+                    background-color: rgba(0,0,0,0.5);">
+        </div>
+
+        <!-- Text Content -->
+        <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+                    color: #fff; text-align: center; z-index: 2;">
+            <h1 style="font-size: 3rem; text-shadow: 2px 2px 6px rgba(0,0,0,0.7);">Landing Gear Overhaul</h1>
+            <!-- <a href="index.html" style="text-decoration: none; color: #fff;">
+                <p style="font-size: 1.2rem; max-width: 700px; margin: auto; text-shadow: 1px 1px 4px rgba(0,0,0,0.6); cursor: pointer;">
+                    We provide world-class aviation solutions with a focus on MRO excellence and AI-powered innovation.
+                </p>
+            </a> -->
+        </div>
+    </section>
+
+
+    <section class="service-section py-5">
+        <div class="container">
+            <div class="row align-items-center">
+
+                <!-- Image -->
+                <div class="col-lg-6 col-12 mb-4 mb-md-0">
+                    <img src="assets/img/service.png" alt="Base Maintenance" class="img-fluid rounded shadow">
+                </div>
+
+                <!-- Content -->
+                <div class="col-lg-6 col-12">
+                    <h3 class="service-title mb-3">Landing Gear Overhaul</h3>
+                    <p class="service-description">
+                        Our Landing Gear Overhaul services provide a precision-engineered restoration of aircraft
+                        landing gear systems using advanced mechanical processes and certified inspection methods.
+                    </p>
+
+
+
+
+                    <strong class="d-block mb-3 service-sub-title">Core technical activities include: </strong>
+
+                    <ul class=" service-list">
+                       <p><i class="fas fa-check-circle me-2 text-primary"></i>Full teardown with  NDT testing
+                            (FPI, MPI, Eddy Current)</p>
+                            <p> <i class="fas fa-check-circle me-2 text-primary"></i> Shock strut
+                                servicing,nitrogen charging, and hydraulic fluid renewal
+                                <p><i class="fas fa-check-circle me-2 text-primary"></i>Replacement of bushings,
+                                bearings, pistons, and chrome-plated cylinders</p>
+                                <p><i class="fas fa-check-circle me-2 text-primary"></i>Torque link, trunnion, and drag
+                                strut reconditioning</p>
+                                <p><i class="fas fa-check-circle me-2 text-primary"></i>Actuator, servo-valve, and
+                                retraction/extension system calibration</p>
+                                <p><i class="fas fa-check-circle me-2 text-primary"></i> Brake assembly overhaul
+                            , heat pack replacement, and hydraulic line flushing</p>
+
+
+                            <p><i class="fas fa-check-circle me-2 text-primary"></i> Wheel hub inspection, rim
+                                machining, and bearing repack</li>
+                                <p><i class="fas fa-check-circle me-2 text-primary"></i> Precision reassembly with OEM
+                                torque values and tolerance settings</p>
+                                <p><i class="fas fa-check-circle me-2 text-primary"></i> Load simulation tests and
+                                hydraulic system performance checks</p>
+
+                    </ul>
+                    <p class="service-description">
+                        Using hydraulic test rigs, load benches, NDT stations, and precision machining tools, we ensure
+                        every landing gear unit is returned to service fully compliant, reliable, and ready for extended
+                        operational cycles.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+<?php include 'footer.php'; ?>
