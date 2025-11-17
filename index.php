@@ -75,7 +75,7 @@
 
 
 <!-- Hero Section -->
-<section id="home" class="hero-section">
+<section id="home" class="hero-section py-5">
     <div class="container">
         <div class="row align-items-center second_section">
             <div class="col-lg-7 hero-content mt-5">
