@@ -1393,3 +1393,10 @@ html {
 .last_section{
     padding: 20px 0px !important;
 }
+
+
+@media (min-width:1400px) {
+    .feature-card{
+        height: 250px !important;
+    }
+}

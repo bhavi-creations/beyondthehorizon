@@ -810,12 +810,18 @@
                     style="border-radius: 15px; box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);">
             </div>
         </div>
-        <div class="partnership-card card-shadow p-4 mb-4">
-            <h2 class="partnership-section-title">Decades of Global MRO Expertise</h2>
-            <ul class="partnership-bullets">
-                <li>Experienced leadership team with deep MRO and airline operations background</li>
-                <li>Scalable workforce plan to ensure service consistency and availability</li>
-            </ul>
+
+
+        <div class="row">
+            <div class="col-lg-8 mx-auto mb-4">
+                <div class="partnership-card card-shadow p-4 mb-4">
+                    <h2 class="partnership-section-title">Decades of Global MRO Expertise</h2>
+                    <ul class="partnership-bullets">
+                        <li>Experienced leadership team with deep MRO and airline operations background</li>
+                        <li>Scalable workforce plan to ensure service consistency and availability</li>
+                    </ul>
+                </div>
+            </div>
         </div>
 
 
