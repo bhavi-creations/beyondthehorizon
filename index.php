@@ -111,7 +111,10 @@
 <section id="about" class="section about-section">
     <div class="container">
         <div class="text-center mb-5">
-            <h2 class="section-title  section-title-about">About BTH Aviation</h2>
+            <!-- <h2 class="section-title  section-title-about">About BTH Aviation</h2> -->
+
+            <h2 class="section-title section-title-about">About BTH Aviation</h2>
+
             <p class="section-subtitle">BTH: Where Engineering Excellence Meets Aviation's Future. Excellence in
                 Motion.</p>
         </div>
@@ -175,7 +178,8 @@
     <div class="container">
         <div class="team-wrapper">
             <div class="text-center ">
-                <h2 class="section-title-service">Our Services</h2>
+                <!-- <h2 class="section-title-service">Our Services</h2> -->
+                <h2 class="section-title">Our Services</h2>
                 <p class="section-subtitle">Comprehensive MRO Solutions for Modern Aviation</p>
             </div>
             <div class="team-content-wrapper">
@@ -379,7 +383,7 @@
 <section id="innovation" class="section ai-section">
     <div class="container position-relative">
         <div class="text-center mb-5">
-            <h2 class="section-title-mro">AI-Enhanced MRO Innovation</h2>
+            <h2 class="section-title-mro section-title" >AI-Enhanced MRO Innovation</h2>
             <p class="section-subtitle">Redefining the Future of Aircraft Maintenance</p>
         </div>
         <div class="row justify-content-center">

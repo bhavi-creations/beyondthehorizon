@@ -14,7 +14,7 @@
         <!-- Text Content -->
         <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
                     color: #fff; text-align: center; z-index: 2;">
-            <h1 style="font-size: 3rem; text-shadow: 2px 2px 6px rgba(0,0,0,0.7);">Line Maintenance</h1>
+            <h1 style="font-size: 3rem; text-shadow: 2px 2px 6px rgba(0,0,0,0.7);">Contact us</h1>
             <!-- <a href="index.html" style="text-decoration: none; color: #fff;">
                 <p style="font-size: 1.2rem; max-width: 700px; margin: auto; text-shadow: 1px 1px 4px rgba(0,0,0,0.6); cursor: pointer;">
                     We provide world-class aviation solutions with a focus on MRO excellence and AI-powered innovation.
@@ -27,7 +27,7 @@
         <div class="container">
             <div class="text-center mb-5">
                 <h2 class="section-title">Reach Us</h2>
-                <p class="section-subtitle">Get in touch with our expert to explore tailored MRO solutions designed for  your fleet's success</p>
+                <p class="section-subtitle">Get in touch with our expert to explore tailored MRO solutions designed for  your fleet's success.</p>
             </div>
 
             <div class="row justify-content-center align-items-start">

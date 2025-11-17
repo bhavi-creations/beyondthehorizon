@@ -191,7 +191,7 @@ body {
     position: relative;
 }
 
-/* .section-title {
+ /* .section-title {
     font-size: 2.5rem;
     font-weight: 700;
     color: var(--accent-blue);
@@ -205,47 +205,33 @@ body {
     position: absolute;
     bottom: -10px;
     left: 0;
-    width: 380px;
-    height: 3px;
-    background: var(--primary-blue);
-} */
-/* .section-title-service{
-    font-size: 2.5rem;
-    font-weight: 700;
-    color: var(--accent-blue);
-    margin-bottom: 1rem;
-    position: relative;
-    display: inline-block;
-}
-.section-title-service::after{
-    content: '';
-    position: absolute;
-    bottom: -10px;
-    left: 0;
-    width: 240px;
-    height: 3px;
-    background: var(--primary-blue);
-}
-
-
-.section-title-service{
-    font-size: 2.5rem;
-    font-weight: 700;
-    color: var(--accent-blue);
-    margin-bottom: 1rem;
-    position: relative;
-    display: inline-block;
-}
-.section-title-service::after{
-    content: '';
-    position: absolute;
-    bottom: -10px;
-    left: 0;
-    width: 240px;
+    width: 100px;
     height: 3px;
     background: var(--primary-blue);
 } */
 
+
+
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--accent-blue);
+    margin-bottom: 1.5rem;
+    position: relative;
+    display: inline-block; /* Very Important */
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100%;             /* 👈 Text width ki exact ga underline */
+    height: 3px;
+    background: var(--primary-blue);
+    border-radius: 2px;
+}
 
 .section-subtitle {
     color: var(--text-muted);
@@ -328,6 +314,23 @@ body {
     padding: 2rem;
     text-align: center;
     transition: all 0.3s ease;
+}
+
+
+
+
+.feature-card-content{
+    background: rgba(10, 25, 41, 0.5);
+    border: 1px solid rgba(74, 159, 200, 0.15);
+    border-radius: 10px;
+    padding: 2rem;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+.feature-card-content :hover{
+    background: rgba(13, 34, 56, 0.7);
+    border-color: var(--primary-blue);
+    transform: translateY(-5px); 
 }
 
 .feature-card:hover {
@@ -557,10 +560,17 @@ html {
     border-radius: 0.5rem;
 }
 
-@media (min-width:768px) and (max-width:1400px) {
+@media (min-width:768px) and (max-width:992px) {
     .feature-card {
         /* width: 200px !important; */
         height: 320px !important;
+    }
+
+}
+@media (min-width:992px) and (max-width:1400px) {
+    .feature-card {
+        /* width: 200px !important; */
+        height: 250px !important;
     }
 
 }
