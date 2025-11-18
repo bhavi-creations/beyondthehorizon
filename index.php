@@ -74,42 +74,6 @@
 
 
 
-<!-- Hero Section -->
-<!-- <section id="home" class="hero-section py-5">
-    <div class="container">
-        <div class="row align-items-center second_section">
-            <div class="col-lg-7 hero-content mt-5">
-                <h1 class="hero-title ">BAHARAT AVIATION (BTH-MRO)</h1>
-                <p class="hero-subtitle">Launching India's Next-Generation Aircraft MRO Centre.</p>
-
-                <p class="hero-subtitle">$90 Million Committed Investment in Tirupati.</p>
-
-                <p class="hero-description" id="heroText">
-                    At BTH – Beyond The Horizon, we redefine modern MRO by delivering world-class maintenance,
-                    repair, overhaul, and digital aviation solutions. Our comprehensive capabilities cover airframe,
-                    engine, avionics, landing gear, specialized components, and MBH programs — all designed to
-                    maximize uptime, minimize operational risk, and keep aircraft flying at peak efficiency.
-                    <br> <br>
-                    Leveraging AI-enabled diagnostics, intelligent fleet monitoring, and a skilled engineering
-                    workforce, we turn data into actionable insights that predict failures, enhance reliability, and
-                    reduce AOG events. We modernize aging aircraft, upgrade systems, and provide future-ready
-                    maintenance solutions that set new standards in safety, precision, and performance. At BTH, we
-                    don’t just maintain aircraft — we push aviation beyond the horizon.
-
-                </p>
-
-                <a href="javascript:void(0);" id="readMoreBtn" class="btn btn-custom">Read More</a>
-            </div>
-
-            <div class="col-lg-5 text-center mt-5">
-                <img src="./assets/img/service2.png" alt="Aircraft in Flight" class="img-fluid hero-image"
-                    style="border-radius: 20px; box-shadow: 0 10px 40px rgba(37, 99, 235, 0.2); animation: fadeInUp 1s ease 0.8s backwards;">
-            </div>
-        </div>
-    </div>
-</section> -->
-
-
 <section id="home" class="hero-section">
     <div class="container">
         <div class="row align-items-center">
@@ -118,10 +82,30 @@
 
                 <p class="hero-subtitle">Launching India's Next-Generation Aircraft MRO Centre</p>
 
-                <p class="hero-subtitle">$90 Million Committed Investment in Tirupati</p>
+                <p class="hero-subtitle">Total Technical Excellence (T.T.E.) Powered by AI</p>
+
+                <!-- <p class="hero-description">
+                    A striking, high-quality rendering of the proposed 60-hectare BTH-MRO facility with state-of-the-art hangars, juxtaposed with advanced AI Predictive Maintenance systems revolutionizing aviation service excellence.
+                </p> -->
+
+
 
                 <p class="hero-description">
-                    A striking, high-quality rendering of the proposed 60-hectare BTH-MRO facility with state-of-the-art hangars, juxtaposed with advanced AI Predictive Maintenance systems revolutionizing aviation service excellence.
+                    A transformative MRO hub built to elevate reliability for airlines across South Asia, the Middle East, and the global aviation network.
+                    <br>
+                    A high-definition rendering of the expansive 60-hectare facility combined with an AI-powered Predictive Maintenance graphic.
+                </p>
+
+
+
+
+
+
+
+
+
+                <p class="hero-description">
+                    BTH-MRO is creating a new center of excellence for global aviation. Designed with next-generation engineering and AI-enabled reliability systems, this facility brings world-class MRO capability to one of the fastest-growing aviation ecosystems in the world.
                 </p>
 
                 <div class="stats-container">
@@ -129,9 +113,13 @@
                         <div class="stat-number">60</div>
                         <div class="stat-label">Hectares</div>
                     </div>
-                    <div class="stat-item">
+                    <!-- <div class="stat-item">
                         <div class="stat-number">$90M</div>
                         <div class="stat-label">Investment</div>
+                    </div> -->
+                    <div class="stat-item">
+                        <div class="stat-number">8+</div>
+                        <div class="stat-label">Aircraft Families Supported</div>
                     </div>
                     <div class="stat-item">
                         <div class="stat-number">AI</div>
@@ -231,10 +219,17 @@
                                     </div>
                                     <div>
                                         <h5 class="text-white fw-semibold mb-2">Tirupati Advantage</h5>
-                                        <p class="text-light small mb-0">
+                                        <!-- <p class="text-light small mb-0">
                                             Excellent connectivity and religious significance ensuring long-term government
                                             and community stability. A location built for sustainable growth.
+                                        </p> -->
+
+                                        <p class="text-light small mb-0">
+                                            BTH-MRO benefits from excellent connectivity to key regional air hubs, a stable and supportive operational environment, and access to a highly skilled engineering workforce—making it an ideal location for long-term aviation growth and reliability
+
                                         </p>
+
+
                                     </div>
                                 </div>
                             </div>
@@ -269,9 +264,10 @@
             <div class="row g-4 mb-5">
                 <div class="col-md-6 col-lg-3">
                     <div class="stat-card rounded-4 p-4 text-center h-100">
-                        <i class="fas fa-dollar-sign text-primary fs-1 mb-3"></i>
-                        <div class="stat-number display-4 fw-bold mb-2">$90M</div>
-                        <div class="text-light fw-semibold">USD Committed Capital</div>
+                        <!-- <i class=""></i> -->
+                        <i class="fas fa-solid fa-clock text-primary fs-1 mb-3"></i>
+                        <div class="stat-number display-4 fw-bold mb-2">500</div>
+                        <div class="text-light fw-semibold"> Hours Ahead of Failure</div>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3">

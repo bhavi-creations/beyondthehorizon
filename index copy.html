@@ -3,66 +3,224 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Baharat Aviation - BTH-MRO</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <title>BAHARAT AVIATION (BTH-MRO)</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap');
-/* 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
+        :root {
+            --primary-blue: #3b82f6;
+            --cyan: #06b6d4;
+            --dark-bg: #0f172a;
+            --card-bg: rgba(30, 58, 138, 0.3);
         }
 
         body {
-            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 50%, #0f172a 100%);
+            color: #fff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            min-height: 100vh;
+            position: relative;
             overflow-x: hidden;
-        } */
+        }
+
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: radial-gradient(circle at 2px 2px, rgba(59, 130, 246, 0.3) 1px, transparent 0);
+            background-size: 48px 48px;
+            opacity: 0.2;
+            z-index: -1;
+        }
 
         .hero-section {
-            /* min-height: 100vh; */
-            background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%);
-            position: relative;
-            overflow: hidden;
-            /* display: flex;
+            padding: 80px 0;
+        }
+
+        .hero-title {
+            font-size: 4rem;
+            font-weight: bold;
+            background: linear-gradient(to right, #60a5fa, #22d3ee, #3b82f6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 1rem;
+        }
+
+        .hero-subtitle {
+            font-size: 2rem;
+            color: #bfdbfe;
+            margin-bottom: 1rem;
+        }
+
+        .hero-description {
+            font-size: 1.125rem;
+            color: #cbd5e1;
+            line-height: 1.8;
+            margin-bottom: 2rem;
+        }
+
+        .stats-container {
+            display: flex;
+            gap: 2rem;
+            margin: 2rem 0;
+            flex-wrap: wrap;
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 3rem;
+            font-weight: bold;
+            color: #60a5fa;
+        }
+
+        .stat-label {
+            font-size: 0.875rem;
+            color: #94a3b8;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .cta-button {
+            display: inline-flex;
             align-items: center;
-            padding: 80px 0; */
+            gap: 0.5rem;
+            padding: 1rem 2rem;
+            background: linear-gradient(to right, #2563eb, #06b6d4);
+            color: white;
+            text-decoration: none;
+            border-radius: 0.5rem;
+            font-weight: 600;
+            font-size: 1.125rem;
+            transition: all 0.3s ease;
         }
 
-        /* Animated background elements */
-        .hero-section::before {
-            content: '';
+        .cta-button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 20px 40px rgba(37, 99, 235, 0.5);
+            color: white;
+        }
+
+        .hero-image {
+            border-radius: 1rem;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+        }
+
+        .strategic-section {
+            padding: 80px 0;
+            background: linear-gradient(to bottom, transparent, rgba(30, 58, 138, 0.3), transparent);
+        }
+
+        .section-title {
+            color: #60a5fa;
+            font-weight: bold;
+        }
+
+        .section-subtitle {
+            color: #cbd5e1;
+            max-width: 600px;
+        }
+
+        .feature-card {
+            background: rgba(30, 58, 138, 0.4);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(96, 165, 250, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .feature-card:hover {
+            border-color: rgba(34, 211, 238, 0.5);
+            transform: translateY(-5px);
+        }
+
+        .feature-icon {
+            width: 60px;
+            height: 60px;
+            background: rgba(6, 182, 212, 0.2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            color: #22d3ee;
+        }
+
+        .highlight-badge {
+            background: rgba(6, 182, 212, 0.2);
+            border: 1px solid rgba(34, 211, 238, 0.3);
+        }
+
+        .quote-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .quote-icon {
             position: absolute;
-            width: 600px;
-            height: 600px;
-            background: radial-gradient(circle, rgba(59, 130, 246, 0.15) 0%, transparent 70%);
-            border-radius: 50%;
-            top: -200px;
-            right: -200px;
-            animation: pulse 8s ease-in-out infinite;
+            top: 20px;
+            left: 20px;
+            font-size: 3rem;
+            color: rgba(96, 165, 250, 0.2);
+            z-index: 1;
         }
 
-        .hero-section::after {
-            content: '';
-            position: absolute;
-            width: 400px;
-            height: 400px;
-            background: radial-gradient(circle, rgba(147, 51, 234, 0.1) 0%, transparent 70%);
-            border-radius: 50%;
-            bottom: -150px;
-            left: -150px;
-            animation: pulse 6s ease-in-out infinite reverse;
+        .stat-icon {
+            width: 50px;
+            height: 50px;
+            background: rgba(59, 130, 246, 0.2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #60a5fa;
         }
 
-        @keyframes pulse {
-            0%, 100% { transform: scale(1); opacity: 0.5; }
-            50% { transform: scale(1.1); opacity: 0.8; }
+        .stat-card {
+            background: rgba(30, 58, 138, 0.4);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(96, 165, 250, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .stat-card:hover {
+            border-color: rgba(34, 211, 238, 0.5);
+            transform: scale(1.05);
+        }
+
+        .aircraft-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+            justify-content: center;
+        }
+
+        .aircraft-badge {
+            background: rgba(30, 58, 138, 0.3);
+            border: 1px solid rgba(96, 165, 250, 0.2);
+            color: #cbd5e1;
+        }
+
+        @media (max-width: 768px) {
+            .hero-title {
+                font-size: 2.5rem;
+            }
+            .hero-subtitle {
+                font-size: 1.5rem;
+            }
+            .stats-container {
+                justify-content: center;
+            }
         }
 
         @keyframes fadeInUp {
             from {
                 opacity: 0;
-                transform: translateY(40px);
+                transform: translateY(30px);
             }
             to {
                 opacity: 1;
@@ -70,256 +228,294 @@
             }
         }
 
-        @keyframes float {
-            0%, 100% { transform: translateY(0px); }
-            50% { transform: translateY(-20px); }
-        }
-
-        @keyframes glow {
-            0%, 100% { box-shadow: 0 0 20px rgba(59, 130, 246, 0.3), 0 0 40px rgba(59, 130, 246, 0.2); }
-            50% { box-shadow: 0 0 30px rgba(59, 130, 246, 0.5), 0 0 60px rgba(59, 130, 246, 0.3); }
-        }
-
-        .hero-content {
-            position: relative;
-            z-index: 2;
-            animation: fadeInUp 1s ease 0.2s backwards;
-        }
-
-        .hero-title {
-            font-size: 3.5rem;
-            font-weight: 800;
-            background: linear-gradient(135deg, #ffffff 0%, #94a3b8 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            margin-bottom: 1.5rem;
-            line-height: 1.2;
-            letter-spacing: -1px;
-        }
-
-        .hero-subtitle {
-            font-size: 1.5rem;
-            color: #e2e8f0;
-            font-weight: 600;
-            margin-bottom: 1rem;
-            position: relative;
-            padding-left: 20px;
-        }
-
-        .hero-subtitle::before {
-            content: '';
-            position: absolute;
-            left: 0;
-            top: 50%;
-            transform: translateY(-50%);
-            width: 4px;
-            height: 70%;
-            background: linear-gradient(180deg, #3b82f6, #8b5cf6);
-            border-radius: 2px;
-        }
-
-        .hero-description {
-            font-size: 1.1rem;
-            color: #cbd5e1;
-            line-height: 1.8;
-            margin-top: 2rem;
-            padding: 1.5rem;
-            background: rgba(255, 255, 255, 0.05);
-            border-left: 3px solid #3b82f6;
-            border-radius: 8px;
-            backdrop-filter: blur(10px);
-        }
-
-        .stats-container {
-            display: flex;
-            gap: 2rem;
-            margin-top: 3rem;
-            flex-wrap: wrap;
-        }
-
-        .stat-item {
-            flex: 1;
-            min-width: 150px;
-            padding: 1.5rem;
-            background: rgba(255, 255, 255, 0.08);
-            border-radius: 16px;
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(10px);
-            transition: all 0.3s ease;
-        }
-
-        .stat-item:hover {
-            transform: translateY(-5px);
-            background: rgba(255, 255, 255, 0.12);
-            border-color: rgba(59, 130, 246, 0.4);
-        }
-
-        .stat-number {
-            font-size: 2.5rem;
-            font-weight: 800;
-            background: linear-gradient(135deg, #3b82f6, #8b5cf6);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-
-        .stat-label {
-            color: #94a3b8;
-            font-size: 0.9rem;
-            margin-top: 0.5rem;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-
-        .hero-image-container {
-            position: relative;
-            z-index: 2;
-            animation: fadeInUp 1s ease 0.6s backwards;
-        }
-
-        .hero-image {
-            width: 100%;
-            border-radius: 24px;
-            box-shadow: 
-                0 20px 60px rgba(0, 0, 0, 0.4),
-                0 0 80px rgba(59, 130, 246, 0.3);
-            animation: float 6s ease-in-out infinite, glow 4s ease-in-out infinite;
-            border: 2px solid rgba(255, 255, 255, 0.1);
-        }
-
-        .badge-container {
-            position: absolute;
-            bottom: -20px;
-            left: 50%;
-            transform: translateX(-50%);
-            display: flex;
-            gap: 1rem;
-            animation: fadeInUp 1s ease 1s backwards;
-        }
-
-        .badge {
-            padding: 0.8rem 1.5rem;
-            background: linear-gradient(135deg, #3b82f6, #8b5cf6);
-            color: white;
-            border-radius: 50px;
-            font-size: 0.9rem;
-            font-weight: 600;
-            box-shadow: 0 10px 30px rgba(59, 130, 246, 0.4);
-            white-space: nowrap;
-        }
-
-        .cta-button {
-            display: inline-block;
-            padding: 1rem 2.5rem;
-            margin-top: 2rem;
-            background: linear-gradient(135deg, #3b82f6, #8b5cf6);
-            color: white;
-            text-decoration: none;
-            border-radius: 50px;
-            font-weight: 600;
-            font-size: 1.1rem;
-            transition: all 0.3s ease;
-            box-shadow: 0 10px 30px rgba(59, 130, 246, 0.4);
-            border: 2px solid transparent;
-        }
-
-        .cta-button:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 15px 40px rgba(59, 130, 246, 0.6);
-            color: white;
-        }
-
-        /* Responsive Design */
-        @media (max-width: 992px) {
-            .hero-title {
-                font-size: 2.5rem;
-            }
-
-            .hero-subtitle {
-                font-size: 1.2rem;
-            }
-
-            .stats-container {
-                gap: 1rem;
-            }
-
-            .stat-item {
-                min-width: 120px;
-            }
-
-            .badge-container {
-                flex-direction: column;
-                align-items: center;
-                bottom: -40px;
-            }
-        }
-
-        @media (max-width: 768px) {
-            .hero-title {
-                font-size: 2rem;
-            }
-
-            .hero-subtitle {
-                font-size: 1.1rem;
-            }
-
-            .hero-description {
-                font-size: 1rem;
-            }
-
-            .stat-number {
-                font-size: 2rem;
-            }
+        [style*="animation: fadeInUp"] {
+            animation-fill-mode: both;
         }
     </style>
 </head>
 <body>
-    <section id="home" class="hero-section">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-7 hero-content">
-                    <h1 class="hero-title">BAHARAT AVIATION<br>(BTH-MRO)</h1>
-                    
-                    <p class="hero-subtitle">Launching India's Next-Generation Aircraft MRO Centre</p>
-                    
-                    <p class="hero-subtitle">$90 Million Committed Investment in Tirupati</p>
-                    
-                    <p class="hero-description">
-                        A striking, high-quality rendering of the proposed 60-hectare BTH-MRO facility with state-of-the-art hangars, juxtaposed with advanced AI Predictive Maintenance systems revolutionizing aviation service excellence.
-                    </p>
 
-                    <div class="stats-container">
-                        <div class="stat-item">
-                            <div class="stat-number">60</div>
-                            <div class="stat-label">Hectares</div>
-                        </div>
-                        <div class="stat-item">
-                            <div class="stat-number">$90M</div>
-                            <div class="stat-label">Investment</div>
-                        </div>
-                        <div class="stat-item">
-                            <div class="stat-number">AI</div>
-                            <div class="stat-label">Powered</div>
-                        </div>
+<!-- Hero Section -->
+<section id="home" class="hero-section">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-7 hero-content">
+                <h1 class="hero-title">BAHARAT AVIATION<br>(BTH-MRO)</h1>
+
+                <p class="hero-subtitle">Launching India's Next-Generation Aircraft MRO Centre</p>
+
+                <p class="hero-description">
+                    A striking, high-quality rendering of the proposed 60-hectare BTH-MRO facility with state-of-the-art hangars, juxtaposed with advanced AI Predictive Maintenance systems revolutionizing aviation service excellence.
+                </p>
+
+                <div class="stats-container">
+                    <div class="stat-item">
+                        <div class="stat-number">60</div>
+                        <div class="stat-label">Hectares</div>
                     </div>
-
-                    <a href="#contact" class="cta-button">Explore Our Vision</a>
+                    <div class="stat-item">
+                        <div class="stat-number">7</div>
+                        <div class="stat-label">Aircraft Families Supported</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">AI</div>
+                        <div class="stat-label">Powered</div>
+                    </div>
                 </div>
 
-                <div class="col-lg-5 text-center mt-5 mt-lg-0">
-                    <div class="hero-image-container">
-                        <img src="./assets/img/service2.png" alt="BTH-MRO Aircraft Facility" class="img-fluid hero-image">
-                        <!-- <div class="badge-container">
-                            <span class="badge">ISO Certified</span>
-                            <span class="badge">Next-Gen Tech</span>
-                        </div> -->
+                <a href="#contact" class="cta-button">
+                    Secure Your Anchor Tenant Slot – Inquire Now
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+
+            <div class="col-lg-5 text-center mt-5 mt-lg-0">
+                <div class="hero-image-container">
+                    <img src="./assets/img/service2.png" alt="BTH-MRO Aircraft Facility" class="img-fluid hero-image">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Vision Section -->
+<section class="py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="quote-card rounded-4 p-5">
+                    <h3 class="text-white fw-bold fs-3 mb-4" style="color: #60a5fa !important;">The Vision</h3>
+                    <p class="text-light fs-5 lh-lg mb-0">
+                        BTH-MRO is creating a new center of excellence for global aviation. Designed with 
+                        next-generation engineering and AI-enabled reliability systems, this facility brings 
+                        world-class MRO capability to one of the fastest-growing aviation ecosystems in the world.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Strategic Imperative Section -->
+<section class="strategic-section py-5 position-relative">
+    <div class="container py-5">
+        <!-- Section Header -->
+        <div class="text-center mb-5" style="animation: fadeInUp 0.8s ease;">
+            <h2 class="section-title display-3 fw-bold mb-4">The Strategic Imperative</h2>
+            <p class="section-subtitle fs-5 mx-auto">Why India is the Future of Global MRO Excellence</p>
+        </div>
+
+        <!-- Feature Cards -->
+        <div class="row g-4 mb-5" style="animation: fadeInUp 0.8s ease 0.2s backwards;">
+            <!-- MRO Gap Card -->
+            <div class="col-lg-6">
+                <div class="feature-card rounded-4 p-4 h-100">
+                    <div class="d-flex align-items-start gap-4">
+                        <div class="feature-icon rounded-3 flex-shrink-0">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-white fw-bold fs-4 mb-3">The MRO Gap</h3>
+                            <p class="text-light mb-0 lh-lg">
+                                Addressing the regional deficit in high-quality, cost-efficient heavy maintenance capacity.
+                                BTH-MRO fills a critical void in South Asia, Middle East, and Africa with world-class facilities
+                                and cutting-edge technology.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cost Advantage Card -->
+            <div class="col-lg-6">
+                <div class="feature-card rounded-4 p-4 h-100">
+                    <div class="d-flex align-items-start gap-4">
+                        <div class="feature-icon rounded-3 flex-shrink-0">
+                            <i class="fas fa-dollar-sign"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-white fw-bold fs-4 mb-3">The Cost Advantage</h3>
+                            <p class="text-light mb-3 lh-lg">
+                                Strategic financial benefits passed directly to clients:
+                            </p>
+                            <div class="highlight-badge px-4 py-3 rounded-3 d-inline-block">
+                                <i class="fas fa-bolt me-2"></i>
+                                <span class="fw-bold fs-5">40-60% Lower Operating Costs</span>
+                                <span class="d-block small mt-1">vs. Western MROs</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+        <!-- National Commitment -->
+        <div class="row mb-5" style="animation: fadeInUp 0.8s ease 0.4s backwards;">
+            <div class="col-12">
+                <div class="quote-card rounded-4 p-5 position-relative">
+                    <i class="fas fa-quote-left quote-icon"></i>
+                    <div class="position-relative" style="z-index: 2;">
+                        <h3 class="text-white fw-bold fs-3 mb-4">
+                            <i class="fas fa-flag me-3 text-primary"></i>National Commitment: Make in India
+                        </h3>
+                        <blockquote class="mb-4">
+                            <p class="text-light fs-5 lh-lg fst-italic mb-0">
+                                "We are building an MRO legacy in India—a dedicated MRO industry populated with skilled Tech-Engineers,
+                                cost-effective technical expertise to support global hubs, including Middle East and Africa."
+                            </p>
+                        </blockquote>
+                        <div class="row g-4 mt-4">
+                            <div class="col-md-6">
+                                <div class="d-flex align-items-start gap-3">
+                                    <div class="stat-icon rounded-2 flex-shrink-0">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                    </div>
+                                    <div>
+                                        <h5 class="text-white fw-semibold mb-2">Tirupati Advantage</h5>
+                                        <p class="text-light small mb-0">
+                                            Excellent connectivity and religious significance ensuring long-term government
+                                            and community stability. A location built for sustainable growth.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="d-flex align-items-start gap-3">
+                                    <div class="stat-icon rounded-2 flex-shrink-0">
+                                        <i class="fas fa-users"></i>
+                                    </div>
+                                    <div>
+                                        <h5 class="text-white fw-semibold mb-2">Skilled Workforce</h5>
+                                        <p class="text-light small mb-0">
+                                            Building India's largest pool of certified aviation technicians and engineers,
+                                            ready to serve global markets with precision and excellence.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Quick Facts & Scale -->
+        <div style="animation: fadeInUp 0.8s ease 0.6s backwards;">
+            <div class="text-center mb-5">
+                <h3 class="display-5 fw-bold mb-3 section-title">Quick Facts & Scale</h3>
+                <p class="text-light fs-5">Data Points for Immediate Impact</p>
+            </div>
+
+            <!-- Stats Grid -->
+            <div class="row g-4 mb-5">
+                <div class="col-md-6 col-lg-3">
+                    <div class="stat-card rounded-4 p-4 text-center h-100">
+                        <i class="fas fa-dollar-sign text-primary fs-1 mb-3"></i>
+                        <div class="stat-number display-4 fw-bold mb-2">$90M</div>
+                        <div class="text-light fw-semibold">USD Committed Capital</div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="stat-card rounded-4 p-4 text-center h-100">
+                        <i class="fas fa-warehouse text-primary fs-1 mb-3"></i>
+                        <div class="stat-number display-4 fw-bold mb-2">60</div>
+                        <div class="text-light fw-semibold">Hectares Total Capacity</div>
+                        <small class="text-white d-block mt-2">(20 Hectares Airside)</small>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="stat-card rounded-4 p-4 text-center h-100">
+                        <i class="fas fa-plane text-primary fs-1 mb-3"></i>
+                        <div class="stat-number display-4 fw-bold mb-2">8+</div>
+                        <div class="text-light fw-semibold">Aircraft Models Supported</div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="stat-card rounded-4 p-4 text-center h-100">
+                        <i class="fas fa-cogs text-primary fs-1 mb-3"></i>
+                        <div class="stat-number display-4 fw-bold mb-2">6,000</div>
+                        <div class="text-light fw-semibold">Component Items</div>
+                        <small class="text-white d-block mt-2">Within 7 Years</small>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Target Fleet -->
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="stat-card rounded-4 p-4">
+                        <h4 class="text-white fw-bold mb-4 text-center">
+                            <i class="fas fa-plane-departure text-primary me-2"></i>Target Fleet Coverage
+                        </h4>
+                        <div class="aircraft-list">
+                            <span class="aircraft-badge badge rounded-pill px-3 py-2">Airbus A220</span>
+                            <span class="aircraft-badge badge rounded-pill px-3 py-2">Airbus A320</span>
+                            <span class="aircraft-badge badge rounded-pill px-3 py-2">Airbus A330</span>
+                            <span class="aircraft-badge badge rounded-pill px-3 py-2">Boeing 737</span>
+                            <span class="aircraft-badge badge rounded-pill px-3 py-2">Boeing 767</span>
+                            <span class="aircraft-badge badge rounded-pill px-3 py-2">Boeing 777</span>
+                            <span class="aircraft-badge badge rounded-pill px-3 py-2">Boeing 787</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Tirupati Advantage Section -->
+<section class="py-5">
+    <div class="container">
+        <h3 class="display-5 fw-bold mb-5 text-center section-title">Tirupati Advantage</h3>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="stat-card rounded-4 p-4 text-center h-100">
+                    <div class="mb-4">
+                        <i class="fas fa-map-marker-alt text-primary" style="font-size: 3rem;"></i>
+                    </div>
+                    <p class="text-light fs-6 lh-lg mb-0">
+                        Excellent connectivity to key regional air hubs
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="stat-card rounded-4 p-4 text-center h-100">
+                    <div class="mb-4">
+                        <i class="fas fa-shield-alt text-primary" style="font-size: 3rem;"></i>
+                    </div>
+                    <p class="text-light fs-6 lh-lg mb-0">
+                        A stable operational environment
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="stat-card rounded-4 p-4 text-center h-100">
+                    <div class="mb-4">
+                        <i class="fas fa-users text-primary" style="font-size: 3rem;"></i>
+                    </div>
+                    <p class="text-light fs-6 lh-lg mb-0">
+                        Access to a skilled engineering workforce
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer CTA -->
+<section class="py-5 text-center">
+    <div class="container">
+        <h3 class="display-5 fw-bold mb-4">Ready to Transform Aviation MRO?</h3>
+        <p class="fs-5 text-light mb-4">
+            Join us in shaping the future of aircraft maintenance excellence
+        </p>
+        <a href="#contact" class="cta-button">
+            Explore Our Vision
+            <i class="fas fa-arrow-right"></i>
+        </a>
+    </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
