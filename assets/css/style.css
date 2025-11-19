@@ -79,7 +79,9 @@ body {
     /* min-height: 70vh; */
     display: flex;
     align-items: center;
-    background: linear-gradient(135deg, var(--darker-bg) 0%, #0d2238 50%, var(--dark-bg) 100%);
+    /* background: linear-gradient(135deg, var(--darker-bg) 0%, #0d2238 50%, var(--dark-bg) 100%); */
+    /* background-color: #112a45 !important; */
+    background-color: #112a45  !important;
     overflow: hidden;
 }
 
@@ -89,10 +91,10 @@ body {
     top: 0;
     left: 0;
     right: 0;
-    bottom: 0;
+    /* bottom: 0;
     background:
         radial-gradient(circle at 20% 50%, rgba(74, 159, 200, 0.1) 0%, transparent 50%),
-        radial-gradient(circle at 80% 80%, rgba(94, 179, 214, 0.15) 0%, transparent 50%);
+        radial-gradient(circle at 80% 80%, rgba(94, 179, 214, 0.15) 0%, transparent 50%); */
     animation: pulse 8s ease-in-out infinite;
 }
 
@@ -320,6 +322,9 @@ body {
 
 
 
+
+
+
 .feature-card-content {
     background: rgba(10, 25, 41, 0.5);
     border: 1px solid rgba(74, 159, 200, 0.15);
@@ -359,10 +364,6 @@ body {
     line-height: 1.6;
 }
 
-/* About Section */
-.about-section {
-    background: linear-gradient(135deg, var(--dark-bg) 0%, var(--darker-bg) 100%);
-}
 
 /* AI Innovation Section */
 .ai-section {
@@ -383,10 +384,7 @@ body {
         radial-gradient(circle at 70% 70%, rgba(94, 179, 214, 0.1) 0%, transparent 40%);
 }
 
-/* Contact Section */
-.contact-section {
-    background: var(--darker-bg);
-}
+
 
 .contact-card {
     background: linear-gradient(135deg, rgba(10, 25, 41, 0.7), rgba(13, 34, 56, 0.7));
@@ -462,7 +460,7 @@ html {
 
 .hero-description {
     overflow: hidden;
-    max-height: 200px;
+   
     /* initial visible height */
     transition: max-height 0.5s ease;
 }
@@ -485,7 +483,7 @@ html {
 
 /* insec_serive  stylings    */
 .section-padding {
-    background-color: #112a45 !important;
+    background-color: #203955 !important;
 }
 
 .Corporate_section {
@@ -561,6 +559,16 @@ html {
     padding: 2rem;
     border-radius: 0.5rem;
 }
+
+
+
+
+@media (min-width:768px) and (max-width:992px) {
+#innovation_section{
+    height: 320px !important;
+}
+}
+
 
 @media (min-width:768px) and (max-width:992px) {
     .feature-card {
@@ -676,8 +684,8 @@ html {
 
 /* hero section stylings  */
 .hero-section {
-    min-height: 100vh;
-    background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%);
+    /* min-height: 100vh; */
+    /* background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%); */
     position: relative;
     overflow: hidden;
     display: flex;
@@ -691,7 +699,7 @@ html {
     position: absolute;
     width: 600px;
     height: 600px;
-    background: radial-gradient(circle, rgba(59, 130, 246, 0.15) 0%, transparent 70%);
+    /* background: radial-gradient(circle, rgba(59, 130, 246, 0.15) 0%, transparent 70%); */
     border-radius: 50%;
     top: -200px;
     right: -200px;
@@ -703,7 +711,7 @@ html {
     position: absolute;
     width: 400px;
     height: 400px;
-    background: radial-gradient(circle, rgba(147, 51, 234, 0.1) 0%, transparent 70%);
+    /* background: radial-gradient(circle, rgba(147, 51, 234, 0.1) 0%, transparent 70%); */
     border-radius: 50%;
     bottom: -150px;
     left: -150px;
@@ -1107,7 +1115,7 @@ html {
 
 .tte2-wrapper {
     padding: 60px 0;
-    background: transparent;
+    background: #15304d;
 }
 
 .container {
@@ -1399,4 +1407,39 @@ html {
     .feature-card{
         height: 250px !important;
     }
+}
+
+.position-relative{
+    background-color: #203955  ;
+}
+
+.ai-section{
+    background-color: #112a45  !important ;
+}
+
+
+.about-section{
+    background-color: #112a45  !important ;
+}
+
+.capabilities-wrapper{
+    background-color: #203955 !important;
+}
+
+
+
+/* Contact Section */
+.contact-section {
+    background-color: #112a45  !important;
+}
+
+.mro-section{
+    background-color: #2f4968  !important;
+}
+
+
+
+
+.service-section{
+    background-color: #112a45   ;
 }
