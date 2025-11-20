@@ -28,7 +28,7 @@
 
                 <!-- Image -->
                 <div class="col-md-6 col-12 mb-4 mb-md-0">
-                    <img src="assets/img/service.png" alt="Base Maintenance" class="img-fluid rounded shadow">
+                    <img src="assets/img/1.png" alt="Base Maintenance" class="img-fluid rounded shadow">
                 </div>
 
                 <!-- Content -->

@@ -12,7 +12,7 @@
 
         <div class="carousel-inner">
             <div class="carousel-item active position-relative">
-                <img src="./assets/img/slider1.png" class="d-block w-100" alt="Aircraft in Flight"
+                <img src="./assets/img/slider6.png" class="d-block w-100" alt="Aircraft in Flight"
                     style="height: 600px; object-fit: cover;">
 
                 <!-- Full Dark Overlay -->
@@ -436,7 +436,7 @@
 
                                 <div class="custom-card custom_card_bg_three swiper-slide">
 
-                                    <div class="service-card">
+                                    <div class="  equal-service-card">
                                         <div class="service-icon"><i class="bi bi-wrench-adjustable"></i></div>
                                         <h3 class="service-title">Base Maintenance</h3>
                                         <p class="service-description">Comprehensive in-depth support for
@@ -458,7 +458,7 @@
                                 <div class="custom-card custom_card_bg_three swiper-slide">
 
 
-                                    <div class="service-card">
+                                    <div class=" equal-service-card">
                                         <div class="service-icon"><i class="bi bi-clock-history"></i></div>
                                         <h3 class="service-title">Line Maintenance</h3>
                                         <p class="service-description">Fast, efficient day-to-day operations
@@ -479,7 +479,7 @@
                                 <div class="custom-card custom_card_bg_three swiper-slide">
 
 
-                                    <div class="service-card">
+                                    <div class=" equal-service-card">
                                         <div class="service-icon"><i class="bi bi-lightning-charge"></i></div>
                                         <h3 class="service-title">Engine & APU Overhaul</h3>
                                         <p class="service-description">Peak performance restoration for critical
@@ -499,7 +499,7 @@
                                 <div class="custom-card custom_card_bg_three swiper-slide">
 
 
-                                    <div class="service-card">
+                                    <div class=" equal-service-card">
                                         <div class="service-icon"><i class="bi bi-chevron-double-down"></i>
                                         </div>
                                         <h3 class="service-title">Landing Gear Overhaul</h3>
@@ -521,7 +521,7 @@
                                 <div class="custom-card custom_card_bg_three swiper-slide">
 
 
-                                    <div class="service-card">
+                                    <div class=" equal-service-card">
                                         <div class="service-icon"><i class="bi bi-cpu"></i></div>
                                         <h3 class="service-title">Avionics Accessories Overhaul
                                         </h3>
@@ -546,7 +546,7 @@
                                 <div class="custom-card custom_card_bg_three swiper-slide">
 
 
-                                    <div class="service-card">
+                                    <div class=" equal-service-card">
                                         <div class="service-icon"><i class="bi bi-cpu"></i></div>
                                         <h3 class="service-title">Corporate Sustainability
 
@@ -574,7 +574,7 @@
                                 <div class="custom-card custom_card_bg_three swiper-slide">
 
 
-                                    <div class="service-card">
+                                    <div class=" equal-service-card">
                                         <div class="service-icon"><i class="bi bi-tools"></i></div>
                                         <h3 class="service-title">Specialized Services</h3>
                                         <p class="service-description">High-precision solutions for complex
@@ -729,7 +729,7 @@
         <!-- Section 3: Future Readiness -->
         <div class="row align-items-center capabilities-row">
             <div class="col-lg-6 col-md-12 text-center mb-4 mb-lg-0">
-                <img src="assets/img/specialized.png" alt="Future Readiness" class="capabilities-image img-fluid rounded-3 shadow">
+                <img src="assets/img/2.png" alt="Future Readiness" class="capabilities-image img-fluid rounded-3 shadow">
             </div>
             <div class="col-lg-6 col-md-12">
                 <div class="capabilities-content">
