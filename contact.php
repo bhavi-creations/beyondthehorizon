@@ -4,7 +4,7 @@
 
 <section id="about-hero" style="position: relative; height: 500px; margin-top: 140px;">
     <!-- Background Image -->
-    <img src="./assets/img/slider1.png" alt="About Us" class="img-fluid w-100 h-100" style="object-fit: cover;">
+    <img src="./assets/img/contact_main_images.png" alt="About Us" class="img-fluid w-100 h-100" style="object-fit: cover;">
 
     <!-- Black Overlay -->
     <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;
@@ -102,14 +102,16 @@
             </div>
 
             <!-- ⭐ RIGHT SIDE – GOOGLE MAP -->
-            <div class="col-lg-6 mb-4">
-                <div class="map-container"
+            <div class="col-lg-6 mb-4  d-flex justify-content-center">
+
+            <img src="./assets/img/13.png" alt="" class="img-fluid">
+                <!-- <div class="map-container"
                     style="border-radius: 15px; overflow: hidden; height: 100%; min-height: 450px;">
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3877.3275672949653!2d79.54497857485377!3d13.637827386742183!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a4d4892440e6095%3A0xf1baad272b949686!2sTirupati%20International%20Airport!5e0!3m2!1sen!2sin!4v1763376722856!5m2!1sen!2sin"
                         width="100%" height="450px" style="border:0;" allowfullscreen="" loading="lazy">
                     </iframe>
-                </div>
+                </div> -->
             </div>
 
 

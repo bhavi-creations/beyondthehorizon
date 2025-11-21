@@ -2,7 +2,7 @@
 
     <section id="about-hero" style="position: relative; height: 500px; margin-top: 140px;">
         <!-- Background Image -->
-        <img src="./assets/img/slider1.png" alt="About Us" class="img-fluid w-100 h-100" style="object-fit: cover;">
+        <img src="./assets/img/service_main_images.png" alt="About Us" class="img-fluid w-100 h-100" style="object-fit: cover;">
 
         <!-- Black Overlay -->
         <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;
