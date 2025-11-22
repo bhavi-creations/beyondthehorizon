@@ -1,7 +1,7 @@
 <?php include 'header.php'; ?>
 
 
-<section>
+ <!-- <section>
     <div id="heroCarousel" class="carousel carousel_section slide carousel-fade" data-bs-ride="carousel"
         style="margin-top: 76px;">
         <div class="carousel-indicators">
@@ -15,7 +15,7 @@
                 <img src="./assets/img/slider6.png" class="d-block w-100" alt="Aircraft in Flight"
                     style="height: 600px; object-fit: cover;">
 
-                <!-- Full Dark Overlay -->
+                
                 <div
                     style="position: absolute; top:0; left:0; width:100%; height:100%; background-color: rgba(0,0,0,0.5); z-index:1;">
                 </div>
@@ -70,6 +70,12 @@
         </button>
     </div>
 
+</section>  -->
+<section class="video-section">
+    <video autoplay muted loop controls playsinline id="fullVideo">
+        <source src="./assets/img/bth_video.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+    </video>
 </section>
 
 
