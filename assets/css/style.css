@@ -281,7 +281,7 @@ body {
 }
 
 .service-title {
-    font-size: 1.5rem;
+    font-size: 28px ;
     font-weight: 600;
     color: var(--accent-blue);
     margin-bottom: 1rem;
@@ -1280,7 +1280,7 @@ html {
     box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.3);
 }
 
-.tte2-block:first-child .tte2-list li {
+/* .tte2-block:first-child .tte2-list li {
     color: rgba(255, 255, 255, 0.95);
     background: rgba(255, 255, 255, 0.15);
     border-left-color: transparent;
@@ -1289,11 +1289,11 @@ html {
 .tte2-block:first-child .tte2-list li:hover {
     background: rgba(255, 255, 255, 0.25);
     border-left-color: #ffffff;
-}
+} */
 
-.tte2-block:first-child .tte2-list li::before {
+/* .tte2-block:first-child .tte2-list li::before {
     color: #ffffff;
-}
+} */
 
 /* Grid layout for program overview subsections */
 .tte2-grid {
@@ -1523,3 +1523,6 @@ html {
         
         }
  
+.capabilities-subtitle{
+    font-size: 15px !important;
+}

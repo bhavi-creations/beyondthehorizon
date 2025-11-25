@@ -23,7 +23,7 @@
 
 <!-- Hero Section -->
 <!-- About Section -->
-<section id="about" class="section about-section" >
+<section id="about" class="section about-section">
     <div class="container">
         <div class="text-center mb-5">
             <!-- <h2 class="section-title  section-title-about">About BTH Aviation</h2> -->
@@ -128,26 +128,30 @@
 <section class="tte2-wrapper">
     <div class="container">
 
-        <!-- Section 2 -->
+    
+
+
+        <!-- Section 3 copy -->
         <div class="tte2-block">
-            <h2 class="tte2-heading">T.T.E.: Your Single-Source, Worry-Free MRO Partnership</h2>
+            <h2 class="section-title ">T.T.E : Your Single-Source, Worry-Free MRO Partnership</h2>
             <p class="tte2-description">
                 T.T.E. is a comprehensive, customizable technical service ecosystem designed to simplify the
                 entire maintenance lifecycle.
             </p>
+            <h4 class=" service-title">Included Services</h4>
 
-            <h4 class="tte2-subheading">Included Services</h4>
             <ul class="tte2-list">
                 <li>Base & Line Maintenance (C-Checks, D-Checks)</li>
                 <li>Engine & Component Overhaul</li>
                 <li>Spare Parts Pooling & Engine Leasing</li>
                 <li>Global Support: Remote Technical Assistance (RTA) & Technical Route Management (TRM)</li>
             </ul>
+            
         </div>
 
         <!-- Section 3 -->
         <div class="tte2-block">
-            <h2 class="tte2-heading">Uncompromised Global Safety Standards</h2>
+            <h2 class="section-title ">Uncompromised Global Safety Standards</h2>
 
             <ul class="tte2-list">
                 <li>Alignment with EASA, FAA, and DGCA standards</li>
@@ -157,7 +161,7 @@
 
         <!-- Program Overview -->
         <div class="tte2-block">
-            <h2 class="tte2-heading">T.T.E. Program Overview</h2>
+            <h2 class="section-title ">T.T.E. Program Overview</h2>
 
             <div class="tte2-grid">
                 <!-- Subsection 1 -->

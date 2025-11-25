@@ -343,7 +343,7 @@
                 <!-- <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=800&auto=format&fit=crop"
                     alt="Aircraft Maintenance" class="img-fluid"
                     style="border-radius: 15px; box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1); height: 300px; "> -->
-                <img src="./assets/img/service4.png" alt="" class="img-fluid">
+                <img src="./assets/img/ai_mro.png" alt="" class="img-fluid">
             </div>
             <div class="col-lg-6 mb-4">
                 <p style="font-size: 1.1rem; line-height: 1.8; color: var(--dark-text);">
