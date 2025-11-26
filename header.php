@@ -38,7 +38,7 @@
             <a class="navbar-brand" href="#home">
                 <!-- <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 60'%3E%3Ctext x='10' y='40' font-family='Arial, sans-serif' font-size='32' font-weight='bold' fill='%232563eb'%3EBTH%3C/text%3E%3Ctext x='10' y='55' font-family='Arial, sans-serif' font-size='10' fill='%23475569'%3EBEYOND THE HORIZON%3C/text%3E%3C/svg%3E"
                     alt="BTH Aviation"> -->
-                <img src="assets/img/slide_bar_logo.png" alt="" class="img-fluid" style="width: 173px; height: 110px ;" >
+                <img src="assets/img/logo.png" alt="" class="img-fluid" style="width: 173px; height: 110px ;" >
             </a>
             <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
