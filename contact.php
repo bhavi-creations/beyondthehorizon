@@ -104,7 +104,7 @@
             <!-- ⭐ RIGHT SIDE – GOOGLE MAP -->
             <div class="col-lg-6 mb-4  d-flex justify-content-center">
 
-            <img src="./assets/img/contact_us_image.png" alt="" class="img-fluid">
+            <img src="./assets/img/13.png" alt="" class="img-fluid">
                 <!-- <div class="map-container"
                     style="border-radius: 15px; overflow: hidden; height: 100%; min-height: 450px;">
                     <iframe

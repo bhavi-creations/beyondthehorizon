@@ -81,6 +81,7 @@
 <section class="video-section">
     <video autoplay muted loop controls playsinline id="fullVideo">
         <source src="./assets/img/bth_video.mp4" type="video/mp4">
+        <!-- <source src="./assets/img/bth_video.mp4" type="video/mp4"> -->
         Your browser does not support HTML5 video.
     </video>
 </section>
