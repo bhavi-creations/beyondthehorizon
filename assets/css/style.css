@@ -1519,10 +1519,15 @@ html {
 
    
         .video-section{
-        margin-top: 140px !important;
+        margin-top: 130px !important;
         
         }
  
 .capabilities-subtitle{
     font-size: 15px !important;
 }
+
+
+
+.btn-custom_base { margin-top: auto; }
+.equal-service-card { display: flex; flex-direction: column; height: 100%; }

@@ -14,7 +14,7 @@
 
     <link href="./assets/img/favicon.png" rel="icon" class="img-fluid">
 
- 
+
 
 
 
@@ -23,9 +23,26 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/freeps2/a7rarpress@main/swiper-bundle.min.css">
 
-     <!-- tags  -->
+    <!-- tags  -->
     <meta name="google" content="nositelinkssearchbox">
-<meta name="google" content="notranslate">
+    <meta name="google" content="notranslate">
+    <style>
+         .logo-tagline {
+        font-size: 10px;
+        font-weight: 600;
+        letter-spacing: 1px;
+
+        /* YOUR COLOR GRADIENT */
+        background: linear-gradient(90deg, #cc9966, #cc9933,#996633);
+        /* background-color: gold; */
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+        text-transform: uppercase;
+        margin-left: 20px !important;
+        margin-top: -10px !important;
+    }
+    </style>
 
 
 
@@ -35,28 +52,31 @@
     <!-- Navigation -->
     <nav class="navbar navbar_section navbar-expand-lg fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="#home">
-                <!-- <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 60'%3E%3Ctext x='10' y='40' font-family='Arial, sans-serif' font-size='32' font-weight='bold' fill='%232563eb'%3EBTH%3C/text%3E%3Ctext x='10' y='55' font-family='Arial, sans-serif' font-size='10' fill='%23475569'%3EBEYOND THE HORIZON%3C/text%3E%3C/svg%3E"
-                    alt="BTH Aviation"> -->
-                <img src="assets/img/logo.png" alt="" class="img-fluid" style="width: 173px; height: 110px ;" >
-            </a>
-            <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button> -->
 
+            <!-- Logo + Tagline -->
+            <a class="navbar-brand d-flex flex-column align-items-start" href="#home">
+                <img src="assets/img/extra_text.png" alt="Logo" class="img-fluid" style="width:170px; height:auto;">
+                <!-- <img src="assets/img/121.png" alt="Logo" class="img-fluid" style="width:170px; height:auto;"> -->
+
+                <!-- Tagline -->
+                <!-- <span class="logo-tagline mt-1">Beyond The Horizon</span> -->
+            </a>
+
+            <!-- Mobile Toggle -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
+            <!-- Menu Items -->
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link " href="index.php">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.php">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="about.php#about">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="service.php#service">Services</a></li>
                     <li class="nav-item"><a class="nav-link" href="innovation.php#innovation">Innovation</a></li>
-                    <!-- <li class="nav-item"><a class="nav-link" href="#sustainability">Sustainability</a></li> -->
                     <li class="nav-item"><a class="nav-link" href="contact.php#contact">Contact</a></li>
                 </ul>
             </div>
+
         </div>
     </nav>
