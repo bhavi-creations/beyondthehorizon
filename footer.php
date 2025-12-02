@@ -5,8 +5,16 @@
 
             <!-- Column 1: Logo -->
             <div class="col-lg-3 col-sm-6 mb-4 text-center text-md-start">
-                <img src="assets/img/LSKS.png" alt="BTH Aviation Logo" style="width:100%;">
+                <!-- <img src="assets/img/LSKS.png" alt="BTH Aviation Logo" style="width:100%;"> -->
                 <!-- <img src="assets/img/bg_11.png" alt="" class="img-fluid"  style="width: 173px; height: 110px ;" > -->
+
+                <a class="navbar-brand d-flex flex-column align-items-start" href="#home">
+                <img src="assets/img/btg_logo.png" alt="Logo" class="img-fluid" style="width:170px; height:auto;">
+                <!-- <img src="assets/img/121.png" alt="Logo" class="img-fluid" style="width:170px; height:auto;"> -->
+
+                <!-- Tagline -->
+                <span class="logo-tagline mt-1">Beyond The Horizon</span>
+            </a>
             </div>
 
             <!-- Column 2: Quick Links -->
