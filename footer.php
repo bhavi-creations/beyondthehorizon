@@ -1,5 +1,5 @@
 <!-- Footer -->
-<footer class="pt-5 pb-4  section-padding">
+<footer class="pt-5   section-padding">
     <div class="container">
         <div class="row">
 
@@ -9,11 +9,13 @@
                 <!-- <img src="assets/img/bg_11.png" alt="" class="img-fluid"  style="width: 173px; height: 110px ;" > -->
 
                 <a class="navbar-brand d-flex flex-column align-items-start" href="#home">
-                <img src="assets/img/btg_logo.png" alt="Logo" class="img-fluid" style="width:170px; height:auto;">
+                <!-- <img src="assets/img/btg_logo.png" alt="Logo" class="img-fluid" style="width:170px; height:auto;"> -->
+                <img src="./assets/img/contact_us_11.png" alt="" class="img-fluid" style="width:300px; height: auto;">
+
                 <!-- <img src="assets/img/121.png" alt="Logo" class="img-fluid" style="width:170px; height:auto;"> -->
 
                 <!-- Tagline -->
-                <span class="logo-tagline mt-1">Beyond The Horizon</span>
+                <!-- <span class="logo-tagline mt-1">Beyond The Horizon</span> -->
             </a>
             </div>
 

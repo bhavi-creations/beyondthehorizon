@@ -7,7 +7,7 @@ require 'vendor/autoload.php'; // Adjust path to autoload.php
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Collect POST data safely
     $name    = $_POST['name'] ?? '';
-    $email  = $_POST['mail'] ?? '';
+    $email  = $_POST['Email'] ?? '';
     $title   = $_POST['title'] ?? '';
     $Company = $_POST['Company'] ?? '';
     $service = $_POST['service'] ?? '';
