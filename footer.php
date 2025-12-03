@@ -95,7 +95,7 @@
                 <h5 class="fw-bold mb-3" style="color:#ffffff;">Contact Us</h5>
                 <ul class="list-unstyled" style="color:#cccccc;">
                     <li class="service-item"><i class="fas fa-map-marker-alt me-2" style="color:#3baaff;"></i>BTH-MRO Headquarters, Tirupati Airport</li>
-                    <li><i class="fas fa-phone me-2" style="color:#3baaff;"></i>+91 9876543210</li>
+                    <li><i class="fas fa-phone me-2" style="color:#3baaff;"></i>+91 9694 112299</li>
                     <li><i class="fas fa-envelope me-2" style="color:#3baaff;"></i>info@bthaviation.com</li>
                 </ul>
             </div>
