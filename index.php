@@ -340,7 +340,7 @@
             <p class="section-subtitle">BTH-MRO: Always 500 Hours Ahead of Failure</p>
         </div>
         <div class="row">
-            <div class="col-lg-6 mb-4">
+            <div class="col-lg-6 mb-4 d-flex justify-content-center align-items-center">
                 <!-- <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=800&auto=format&fit=crop"
                     alt="Aircraft Maintenance" class="img-fluid"
                     style="border-radius: 15px; box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1); height: 300px; "> -->
@@ -638,8 +638,8 @@
         <div class="row justify-content-center">
             <div class="col-lg-10">
                 <div class="row align-items-center mb-4">
-                    <div class="col-md-6 mb-4 mb-md-0">
-                        <img src="./assets/img/5.png" alt="AI Technology" class="img-fluid"
+                    <div class="col-md-6 mb-4 mb-md-0 ">
+                        <img src="./assets/img/5.png" alt="AI Technology" class="img-fluid "
                             style="border-radius: 15px; box-shadow: 0 8px 30px rgba(37, 99, 235, 0.15);">
                     </div>
                     <div class="col-md-6">
@@ -902,7 +902,7 @@
             </div>
 
             <!-- ⭐ RIGHT SIDE – GOOGLE MAP -->
-            <div class="col-lg-6 mb-4 d-flex justify-content-center"> 
+            <div class="col-lg-6 mb-4 d-flex justify-content-center d-none d-lg-block"> 
             <img src="./assets/img/contact_us_11.png" alt="" class="img-fluid">
             <!-- <img src="./assets/img/13.png" alt="" class="img-fluid"> -->
                 <!-- <div class="map-container"

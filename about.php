@@ -1,25 +1,39 @@
 <?php include 'header.php'; ?>
-
-<section id="about-hero" style="position: relative; height: 500px; margin-top: 140px;">
-    <!-- Background Image -->
+<section class="image-section">
     <img src="./assets/img/all_about.png" alt="About Us" class="img-fluid w-100 h-100" style="object-fit: cover;">
 
     <!-- Black Overlay -->
     <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;
-                    background-color: rgba(0,0,0,0.7);">
+                background-color: rgba(0,0,0,0.7);">
     </div>
 
     <!-- Text Content -->
+    <div style="position: absolute;  ;
+                color: #fff; text-align: center; z-index: 2;">
+        <h1 class="service_name" style=" text-shadow: 2px 2px 6px rgba(0,0,0,0.7);">About Us</h1>
+
+    </div>
+</section>
+
+
+
+
+<!-- <section id="about-hero" style="position: relative; height: 500px; margin-top: 110px;">
+  
+    <img src="./assets/img/all_about.png" alt="About Us" class="img-fluid w-100 h-100" style="object-fit: cover;">
+
+   
+    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+                    background-color: rgba(0,0,0,0.7);">
+    </div>
+
+    
     <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
                     color: #fff; text-align: center; z-index: 2;">
         <h1 style="font-size: 3rem; text-shadow: 2px 2px 6px rgba(0,0,0,0.7);">About Us</h1>
-        <!-- <a href="index.php" style="text-decoration: none; color: #fff;">
-                <p style="font-size: 1.2rem; max-width: 700px; margin: auto; text-shadow: 1px 1px 4px rgba(0,0,0,0.6); cursor: pointer;">
-                    We provide world-class aviation solutions with a focus on MRO excellence and AI-powered innovation.
-                </p>
-            </a> -->
+
     </div>
-</section>
+</section> -->
 
 <!-- Hero Section -->
 <!-- About Section -->
@@ -33,7 +47,7 @@
             <p class="section-subtitle">BTH-MRO: Always 500 Hours Ahead of Failure</p>
         </div>
         <div class="row">
-            <div class="col-lg-6 mb-4">
+            <div class="col-lg-6 mb-4 d-flex justify-content-center align-items-center">
                 <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=800&auto=format&fit=crop"
                     alt="Aircraft Maintenance" class="img-fluid"
                     style="border-radius: 15px; box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1); height: 300px; ">
@@ -128,7 +142,7 @@
 <section class="tte2-wrapper">
     <div class="container">
 
-    
+
 
 
         <!-- Section 3 copy -->
@@ -146,7 +160,7 @@
                 <li>Spare Parts Pooling & Engine Leasing</li>
                 <li>Global Support: Remote Technical Assistance (RTA) & Technical Route Management (TRM)</li>
             </ul>
-            
+
         </div>
 
         <!-- Section 3 -->
